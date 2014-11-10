@@ -17,7 +17,7 @@ Please review the [integration instructions](http://wiki.adrally.com/index.php/I
 
 * [Integration Instructions](http://wiki.adrally.com/index.php/IOS)
 * [Inline Code Reference](http://fusepowered.github.io/FuseSDKiOS/)
-* [Fuse SDK Class Reference](http://fusepowered.github.io/FuseSDKiOS/html/interface_fuse_a_p_i.html)
+* [Fuse SDK Class Reference](http://fusepowered.github.io/FuseSDKiOS/Docs/html/interface_fuse_a_p_i.html)
 
 ## Need an Account?
 Please visit [http://www.adrally.com](http://www.adrally.com) for an account to get started!
