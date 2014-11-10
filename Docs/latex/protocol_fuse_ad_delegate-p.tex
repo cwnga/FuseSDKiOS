@@ -1,0 +1,52 @@
+\hypertarget{protocol_fuse_ad_delegate-p}{}\section{$<$Fuse\+Ad\+Delegate$>$ Protocol Reference}
+\label{protocol_fuse_ad_delegate-p}\index{$<$\+Fuse\+Ad\+Delegate$>$@{$<$\+Fuse\+Ad\+Delegate$>$}}
+
+
+This is Fuse A\+P\+I ad delegate.  
+
+
+
+
+{\ttfamily \#import $<$Fuse\+A\+P\+I.\+h$>$}
+
+Inheritance diagram for $<$Fuse\+Ad\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_fuse_ad_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_fuse_ad_delegate-p_aafc293cd46be3bd70eeb60971b961a51}{ad\+Will\+Close}
+\begin{DoxyCompactList}\small\item\em This method indicates when a full-\/screen (interstitial) ad is closing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is Fuse A\+P\+I ad delegate. 
+
+Handles all notifications involved with showing an ad and responding to an ad closing. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_fuse_ad_delegate-p_aafc293cd46be3bd70eeb60971b961a51}{}\index{Fuse\+Ad\+Delegate-\/p@{Fuse\+Ad\+Delegate-\/p}!ad\+Will\+Close@{ad\+Will\+Close}}
+\index{ad\+Will\+Close@{ad\+Will\+Close}!Fuse\+Ad\+Delegate-\/p@{Fuse\+Ad\+Delegate-\/p}}
+\subsubsection[{ad\+Will\+Close}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) ad\+Will\+Close 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_fuse_ad_delegate-p_aafc293cd46be3bd70eeb60971b961a51}
+
+
+This method indicates when a full-\/screen (interstitial) ad is closing. 
+
+When an ad is being dismissed by the user and control is to be returned to the application, this method will be called. Once called, the application can continue execution of the user flow or application. \begin{DoxySeeAlso}{See also}
+\hyperlink{interface_fuse_a_p_i_ada82ae54afd63865982e516d4a71a8b5}{+ show\+Ad\+With\+Delegate\+: (\+Fuse\+A\+P\+I)} for more information on displaying an ad with a $<$\hyperlink{protocol_fuse_ad_delegate-p}{Fuse\+Ad\+Delegate}$>$ 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+\hyperlink{interface_fuse_a_p_i}{Fuse\+A\+P\+I} version 1.\+12 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/buildmachine/buildmonkey/\+Fuse\+S\+D\+Ki\+O\+S-\/dev/\+Code/\+Classes/\+Fuse\+A\+P\+I/Fuse\+A\+P\+I.\+h\end{DoxyCompactItemize}

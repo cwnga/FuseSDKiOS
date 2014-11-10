@@ -1,0 +1,168 @@
+\hypertarget{protocol_fuse_game_data_delegate-p}{}\section{$<$Fuse\+Game\+Data\+Delegate$>$ Protocol Reference}
+\label{protocol_fuse_game_data_delegate-p}\index{$<$\+Fuse\+Game\+Data\+Delegate$>$@{$<$\+Fuse\+Game\+Data\+Delegate$>$}}
+
+
+This is the game data delegate which receives notifications from getting and setting user data.  
+
+
+
+
+{\ttfamily \#import $<$Fuse\+A\+P\+I.\+h$>$}
+
+Inheritance diagram for $<$Fuse\+Game\+Data\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_fuse_game_data_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_fuse_game_data_delegate-p_a779286e74bd187861e72baa22c4a1c90}{game\+Data\+Received\+:\+For\+Key\+:\+Data\+:}
+\begin{DoxyCompactList}\small\item\em This method is called when the request for game data has returned to the device. This method does not receieve the request I\+D in the callback, unlike game\+Data\+Received\+:\+For\+Key\+:\+Data\+:\+Request\+I\+D\+: which can be optionally used instead (if required). \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_fuse_game_data_delegate-p_ad4381e7c5b070343b22d62a337ccd8a8}{game\+Data\+Received\+:\+For\+Key\+:\+Data\+:\+Request\+I\+D\+:}
+\begin{DoxyCompactList}\small\item\em This method is called when the request for game data has returned to the device. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_fuse_game_data_delegate-p_ae30d8baf6c1114c83a39d1cb4bd8bdd0}{game\+Data\+Error\+:}
+\begin{DoxyCompactList}\small\item\em This method indicates when an error has occurred when sending or receiving per-\/user game data information. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_fuse_game_data_delegate-p_ab2b869abbcd0fdb1ca5ccf4bddfb6f00}{game\+Data\+Error\+:\+Request\+I\+D\+:}
+\begin{DoxyCompactList}\small\item\em This method indicates when an error has occurred when sending or receiving per-\/user game data information. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_fuse_game_data_delegate-p_a9888e6aaf263e84a9086e4e80fc01c15}{game\+Data\+Set\+Acknowledged\+:}
+\begin{DoxyCompactList}\small\item\em This method indicates the server has acknowledged a save of per-\/user game data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the game data delegate which receives notifications from getting and setting user data. 
+
+Handles all notification events involved in sending and receiving per-\/user game data. This is not required unless the methods \hyperlink{interface_fuse_a_p_i_a3da637831ec4d7dcd4d45cd7c547cd6a}{set\+Game\+Data\+:\+Delegate\+: (\+Fuse\+A\+P\+I)} or \hyperlink{interface_fuse_a_p_i_a45365af9ff3e5defee7e63de10374ad1}{get\+Game\+Data\+:\+Delegate\+: (\+Fuse\+A\+P\+I)} (or others of the same family) are implemented 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_fuse_game_data_delegate-p_ae30d8baf6c1114c83a39d1cb4bd8bdd0}{}\index{Fuse\+Game\+Data\+Delegate-\/p@{Fuse\+Game\+Data\+Delegate-\/p}!game\+Data\+Error\+:@{game\+Data\+Error\+:}}
+\index{game\+Data\+Error\+:@{game\+Data\+Error\+:}!Fuse\+Game\+Data\+Delegate-\/p@{Fuse\+Game\+Data\+Delegate-\/p}}
+\subsubsection[{game\+Data\+Error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) game\+Data\+Error\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Number $\ast$)}]{\+\_\+error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_fuse_game_data_delegate-p_ae30d8baf6c1114c83a39d1cb4bd8bdd0}
+
+
+This method indicates when an error has occurred when sending or receiving per-\/user game data information. 
+
+When an error occurs when trying to set or retrieve game data, this method will be thrown with an error code. Either this method or game\+Data\+Error\+:\+Request\+I\+D\+: should be implemented to catch an error. This method does not provide the request I\+D. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+error} & \mbox{[}N\+S\+Number$\ast$\mbox{]} The error number corresponding to a value in k\+Fuse\+Game\+Data\+Errors \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_fuse_a_p_i_a3da637831ec4d7dcd4d45cd7c547cd6a}{+ set\+Game\+Data\+:\+Delegate\+: (\+Fuse\+A\+P\+I)} for more information on setting game data 
+
+\hyperlink{interface_fuse_a_p_i_a45365af9ff3e5defee7e63de10374ad1}{+ get\+Game\+Data\+:\+Delegate\+: (\+Fuse\+A\+P\+I)} for more information on retrieving game data 
+
+k\+Fuse\+Game\+Data\+Errors for information on all of the possible error cases 
+\end{DoxySeeAlso}
+\hypertarget{protocol_fuse_game_data_delegate-p_ab2b869abbcd0fdb1ca5ccf4bddfb6f00}{}\index{Fuse\+Game\+Data\+Delegate-\/p@{Fuse\+Game\+Data\+Delegate-\/p}!game\+Data\+Error\+:\+Request\+I\+D\+:@{game\+Data\+Error\+:\+Request\+I\+D\+:}}
+\index{game\+Data\+Error\+:\+Request\+I\+D\+:@{game\+Data\+Error\+:\+Request\+I\+D\+:}!Fuse\+Game\+Data\+Delegate-\/p@{Fuse\+Game\+Data\+Delegate-\/p}}
+\subsubsection[{game\+Data\+Error\+:\+Request\+I\+D\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf game\+Data\+Error\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Number $\ast$)}]{\+\_\+error}
+\item[{RequestID:(N\+S\+Number $\ast$)}]{\+\_\+request\+\_\+id}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_fuse_game_data_delegate-p_ab2b869abbcd0fdb1ca5ccf4bddfb6f00}
+
+
+This method indicates when an error has occurred when sending or receiving per-\/user game data information. 
+
+When an error occurs when trying to set or retrieve game data, this method will be thrown with an error code. Either this method or game\+Data\+Error\+:\+Request\+I\+D\+: should be implemented to catch an error. This method provides the request I\+D. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+error} & \mbox{[}N\+S\+Number$\ast$\mbox{]} The error number corresponding to a value in k\+Fuse\+Game\+Data\+Errors \\
+\hline
+{\em \+\_\+request\+\_\+id} & \mbox{[}N\+S\+Number$\ast$\mbox{]} The request I\+D \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_fuse_a_p_i_a3da637831ec4d7dcd4d45cd7c547cd6a}{+ set\+Game\+Data\+:\+Delegate\+: (\+Fuse\+A\+P\+I)} for more information on setting game data 
+
+\hyperlink{interface_fuse_a_p_i_a45365af9ff3e5defee7e63de10374ad1}{+ get\+Game\+Data\+:\+Delegate\+: (\+Fuse\+A\+P\+I)} for more information on retrieving game data 
+
+k\+Fuse\+Game\+Data\+Errors for information on all of the possible error cases 
+\end{DoxySeeAlso}
+\hypertarget{protocol_fuse_game_data_delegate-p_a779286e74bd187861e72baa22c4a1c90}{}\index{Fuse\+Game\+Data\+Delegate-\/p@{Fuse\+Game\+Data\+Delegate-\/p}!game\+Data\+Received\+:\+For\+Key\+:\+Data\+:@{game\+Data\+Received\+:\+For\+Key\+:\+Data\+:}}
+\index{game\+Data\+Received\+:\+For\+Key\+:\+Data\+:@{game\+Data\+Received\+:\+For\+Key\+:\+Data\+:}!Fuse\+Game\+Data\+Delegate-\/p@{Fuse\+Game\+Data\+Delegate-\/p}}
+\subsubsection[{game\+Data\+Received\+:\+For\+Key\+:\+Data\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) game\+Data\+Received\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{\+\_\+fuse\+\_\+id}
+\item[{ForKey:(N\+S\+String $\ast$)}]{\+\_\+key}
+\item[{Data:(N\+S\+Mutable\+Dictionary $\ast$)}]{\+\_\+data}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_fuse_game_data_delegate-p_a779286e74bd187861e72baa22c4a1c90}
+
+
+This method is called when the request for game data has returned to the device. This method does not receieve the request I\+D in the callback, unlike game\+Data\+Received\+:\+For\+Key\+:\+Data\+:\+Request\+I\+D\+: which can be optionally used instead (if required). 
+
+The requested data is given as an input to the method. This 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+fuse\+\_\+id} & \mbox{[}N\+S\+String$\ast$\mbox{]} The Fuse I\+D of the user for which the data was requested. Can be different that the user signed in on the device if the data requested was for a friend or other user. \\
+\hline
+{\em \+\_\+key} & \mbox{[}N\+S\+String$\ast$\mbox{]} The master object key (if specified) for the data returning. Can be 'nil'. \\
+\hline
+{\em \+\_\+data} & \mbox{[}N\+S\+Mutable\+Dictionary$\ast$\mbox{]} The data payload. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_fuse_a_p_i_a45365af9ff3e5defee7e63de10374ad1}{+ get\+Game\+Data\+:\+Delegate\+: (\+Fuse\+A\+P\+I)} for more information on retrieving game data 
+
+\hyperlink{protocol_fuse_game_data_delegate-p_ae30d8baf6c1114c83a39d1cb4bd8bdd0}{-\/ game\+Data\+Error\+:} for more information on error cases involved with retrieving game data 
+\end{DoxySeeAlso}
+\hypertarget{protocol_fuse_game_data_delegate-p_ad4381e7c5b070343b22d62a337ccd8a8}{}\index{Fuse\+Game\+Data\+Delegate-\/p@{Fuse\+Game\+Data\+Delegate-\/p}!game\+Data\+Received\+:\+For\+Key\+:\+Data\+:\+Request\+I\+D\+:@{game\+Data\+Received\+:\+For\+Key\+:\+Data\+:\+Request\+I\+D\+:}}
+\index{game\+Data\+Received\+:\+For\+Key\+:\+Data\+:\+Request\+I\+D\+:@{game\+Data\+Received\+:\+For\+Key\+:\+Data\+:\+Request\+I\+D\+:}!Fuse\+Game\+Data\+Delegate-\/p@{Fuse\+Game\+Data\+Delegate-\/p}}
+\subsubsection[{game\+Data\+Received\+:\+For\+Key\+:\+Data\+:\+Request\+I\+D\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) game\+Data\+Received\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{\+\_\+fuse\+\_\+id}
+\item[{ForKey:(N\+S\+String $\ast$)}]{\+\_\+key}
+\item[{Data:(N\+S\+Mutable\+Dictionary $\ast$)}]{\+\_\+data}
+\item[{RequestID:(N\+S\+Number $\ast$)}]{\+\_\+request\+\_\+id}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_fuse_game_data_delegate-p_ad4381e7c5b070343b22d62a337ccd8a8}
+
+
+This method is called when the request for game data has returned to the device. 
+
+The requested data is given as an input to the method. This method is the same as game\+Data\+Received\+:\+For\+Key\+:\+Data\+: except that it also passes back the request I\+D that was given to the client when the request was made. You can optionally use this method or game\+Data\+Received\+:\+For\+Key\+:\+Data\+:. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+fuse\+\_\+id} & \mbox{[}N\+S\+String$\ast$\mbox{]} The Fuse I\+D of the user for which the data was requested. Can be different that the user signed in on the device if the data requested was for a friend or other user. \\
+\hline
+{\em \+\_\+key} & \mbox{[}N\+S\+String$\ast$\mbox{]} The master object key (if specified) for the data returning. Can be 'nil'. \\
+\hline
+{\em \+\_\+data} & \mbox{[}N\+S\+Mutable\+Dictionary$\ast$\mbox{]} The data payload. \\
+\hline
+{\em \+\_\+request\+\_\+id} & \mbox{[}N\+S\+Nubmber$\ast$\mbox{]} The request I\+D \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_fuse_a_p_i_a45365af9ff3e5defee7e63de10374ad1}{+ get\+Game\+Data\+:\+Delegate\+: (\+Fuse\+A\+P\+I)} for more information on retrieving game data 
+
+\hyperlink{protocol_fuse_game_data_delegate-p_ae30d8baf6c1114c83a39d1cb4bd8bdd0}{-\/ game\+Data\+Error\+:} for more information on error cases involved with retrieving game data 
+\end{DoxySeeAlso}
+\hypertarget{protocol_fuse_game_data_delegate-p_a9888e6aaf263e84a9086e4e80fc01c15}{}\index{Fuse\+Game\+Data\+Delegate-\/p@{Fuse\+Game\+Data\+Delegate-\/p}!game\+Data\+Set\+Acknowledged\+:@{game\+Data\+Set\+Acknowledged\+:}}
+\index{game\+Data\+Set\+Acknowledged\+:@{game\+Data\+Set\+Acknowledged\+:}!Fuse\+Game\+Data\+Delegate-\/p@{Fuse\+Game\+Data\+Delegate-\/p}}
+\subsubsection[{game\+Data\+Set\+Acknowledged\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) game\+Data\+Set\+Acknowledged\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Number $\ast$)}]{\+\_\+request\+\_\+id}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_fuse_game_data_delegate-p_a9888e6aaf263e84a9086e4e80fc01c15}
+
+
+This method indicates the server has acknowledged a save of per-\/user game data. 
+
+When this method is called, it indicates that the server has successfully saved data sent from the client device. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+request\+\_\+id} & \mbox{[}int\mbox{]} The request I\+D that corresponds to the I\+D returned by a \hyperlink{interface_fuse_a_p_i_a3da637831ec4d7dcd4d45cd7c547cd6a}{set\+Game\+Data\+:\+Delegate\+: (\+Fuse\+A\+P\+I)} method variant. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_fuse_a_p_i_a3da637831ec4d7dcd4d45cd7c547cd6a}{+ set\+Game\+Data\+:\+Delegate\+: (\+Fuse\+A\+P\+I)} for more information on setting game data 
+\end{DoxySeeAlso}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/buildmachine/buildmonkey/\+Fuse\+S\+D\+Ki\+O\+S-\/dev/\+Code/\+Classes/\+Fuse\+A\+P\+I/Fuse\+A\+P\+I.\+h\end{DoxyCompactItemize}

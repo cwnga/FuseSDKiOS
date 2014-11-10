@@ -1,0 +1,49 @@
+\hypertarget{protocol_fuse_overlay_delegate-p}{}\section{$<$Fuse\+Overlay\+Delegate$>$ Protocol Reference}
+\label{protocol_fuse_overlay_delegate-p}\index{$<$\+Fuse\+Overlay\+Delegate$>$@{$<$\+Fuse\+Overlay\+Delegate$>$}}
+
+
+This is Fuse A\+P\+I overlay delegate.  
+
+
+
+
+{\ttfamily \#import $<$Fuse\+A\+P\+I.\+h$>$}
+
+Inheritance diagram for $<$Fuse\+Overlay\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_fuse_overlay_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_fuse_overlay_delegate-p_a45f598193363390e2d50f9cec694be35}{overlay\+Will\+Close}
+\begin{DoxyCompactList}\small\item\em This method indicates when a Fuse overlay will close. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is Fuse A\+P\+I overlay delegate. 
+
+This delegate handles any event from a fuse overlay. Most commonly, an overlay will occur in the form of the \char`\"{}\+More Games\char`\"{} section. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_fuse_overlay_delegate-p_a45f598193363390e2d50f9cec694be35}{}\index{Fuse\+Overlay\+Delegate-\/p@{Fuse\+Overlay\+Delegate-\/p}!overlay\+Will\+Close@{overlay\+Will\+Close}}
+\index{overlay\+Will\+Close@{overlay\+Will\+Close}!Fuse\+Overlay\+Delegate-\/p@{Fuse\+Overlay\+Delegate-\/p}}
+\subsubsection[{overlay\+Will\+Close}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) overlay\+Will\+Close 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_fuse_overlay_delegate-p_a45f598193363390e2d50f9cec694be35}
+
+
+This method indicates when a Fuse overlay will close. 
+
+When an overlay is being displayed by the application, most commonly the \char`\"{}\+More Games\char`\"{} overlay, and has been dismissed by the user, this method will be called to indicate that the application can continue execution of the user flow or application (if applicable). Often, the \char`\"{}\+More Games\char`\"{} section will be displayed over a menu, so the when the overlay is dismissed the menu will still be showing, thus not requiring the implementation of this method. \begin{DoxySeeAlso}{See also}
+\hyperlink{interface_fuse_a_p_i_aced6aa0cc51278b431c664c3f5f9fc30}{+ display\+More\+Games\+: (\+Fuse\+A\+P\+I)} for more information on calling the More Games overlay 
+\end{DoxySeeAlso}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/buildmachine/buildmonkey/\+Fuse\+S\+D\+Ki\+O\+S-\/dev/\+Code/\+Classes/\+Fuse\+A\+P\+I/Fuse\+A\+P\+I.\+h\end{DoxyCompactItemize}
