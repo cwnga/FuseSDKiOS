@@ -2,9 +2,9 @@
 
 ## Current Version
 
-Version: 1.37.3
+Version: 1.37.4
 
-Released: December 3rd, 2014
+Released: January 8th, 2015
 
 ## To Download
 The easiest way to obtain the Fuse SDK is to click the "Download ZIP" button located in the right-hand navigation pane of the Github repository page.
@@ -23,6 +23,14 @@ Please review the [integration instructions](http://wiki.adrally.com/index.php/I
 Please visit [http://www.adrally.com](http://www.adrally.com) for an account to get started!
 
 ## Release Notes
+
+### 1.37.4
+January 8th, 2015
+* Ad orientation fixes
+* Fixed log warnings
+* Remove log spam
+* Ad animation fixes
+* Ad provider updates
 
 ### 1.37.3
 December 3rd, 2014
