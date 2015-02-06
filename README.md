@@ -2,7 +2,7 @@
 
 ## Current Version
 
-Version: 1.38
+Version: 1.38.0
 
 Released: February 6th, 2015
 
@@ -24,7 +24,7 @@ Please visit [http://www.adrally.com](http://www.adrally.com) for an account to 
 
 ## Release Notes
 
-### 1.38
+### 1.38.0
 February 6th, 2015
 * Ad provider updates and fixes
 * Bug fixes
