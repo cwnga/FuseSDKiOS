@@ -25,7 +25,7 @@ Please visit [http://www.adrally.com](http://www.adrally.com) for an account to 
 ## Release Notes
 
 ### 1.38.3
-March 9th, 2015
+March 12th, 2015
 * fix for rare orientation issue
 
 ### 1.38.2
