@@ -1,10 +1,12 @@
 var hierarchy =
 [
+    [ "NSObject", null, [
+      [ "FuseIAPOfferObject", "interface_fuse_i_a_p_offer_object.html", null ],
+      [ "FuseRewardedObject", "interface_fuse_rewarded_object.html", null ],
+      [ "FuseSDK", "interface_fuse_s_d_k.html", null ],
+      [ "FuseVirtualGoodsOfferObject", "interface_fuse_virtual_goods_offer_object.html", null ]
+    ] ],
     [ "<NSObject>", null, [
-      [ "<FuseAdDelegate>", "protocol_fuse_ad_delegate-p.html", null ],
-      [ "FuseAPI", "interface_fuse_a_p_i.html", null ],
-      [ "<FuseDelegate>", "protocol_fuse_delegate-p.html", null ],
-      [ "<FuseGameDataDelegate>", "protocol_fuse_game_data_delegate-p.html", null ],
-      [ "<FuseOverlayDelegate>", "protocol_fuse_overlay_delegate-p.html", null ]
+      [ "<FuseDelegate>", "protocol_fuse_delegate-p.html", null ]
     ] ]
 ];

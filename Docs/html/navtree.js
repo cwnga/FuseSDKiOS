@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "FuseAPI (iOS)", "index.html", [
+  [ "FuseSDK (iOS)", "index.html", [
     [ "Deprecated List", "deprecated.html", null ],
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],
@@ -8,7 +8,8 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Data Fields", "functions.html", [
         [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
+        [ "Functions", "functions_func.html", null ],
+        [ "Properties", "functions_prop.html", null ]
       ] ]
     ] ],
     [ "Files", null, [
@@ -19,7 +20,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_fuse_a_p_i_8h_source.html"
+"_fuse_s_d_k_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

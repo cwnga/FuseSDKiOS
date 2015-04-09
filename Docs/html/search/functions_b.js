@@ -1,8 +1,23 @@
 var searchData=
 [
-  ['postuserchatmessage_3atargetuser_3a',['postUserChatMessage:TargetUser:',['../interface_fuse_a_p_i.html#a604c0c2eeaf0176e358ff5b35f7c3db3',1,'FuseAPI']]],
-  ['postuserchatmessage_3atargetuser_3alevel_3a',['postUserChatMessage:TargetUser:Level:',['../interface_fuse_a_p_i.html#a3c384e70f2e16d9b12ba723b17dad9c8',1,'FuseAPI']]],
-  ['preloadadforzone_3a',['preLoadAdForZone:',['../interface_fuse_a_p_i.html#a0f4ef6867a87c0a565849c96dd0f31fa',1,'FuseAPI']]],
-  ['puchaseverification_3atransactionid_3aoriginaltransactionid_3a',['puchaseVerification:TransactionID:OriginalTransactionID:',['../protocol_fuse_delegate-p.html#a588f6c19e418c6adbba67fd86c0b6515',1,'FuseDelegate-p']]],
-  ['purchaseverification_3atransactionid_3aoriginaltransactionid_3a',['purchaseVerification:TransactionID:OriginalTransactionID:',['../protocol_fuse_delegate-p.html#a74e3e8647db995888bdf94c64d5ad26b',1,'FuseDelegate-p']]]
+  ['registerage_3a',['registerAge:',['../interface_fuse_s_d_k.html#a33903ca8d52be440186c4bbf1cbe510c',1,'FuseSDK']]],
+  ['registerbirthday_3amonth_3aday_3a',['registerBirthday:Month:Day:',['../interface_fuse_s_d_k.html#a5dcbaec8b00d90c4970e1b752e5dc719',1,'FuseSDK']]],
+  ['registercrash_3a',['registerCrash:',['../interface_fuse_s_d_k.html#a9afd8c386a2b6664641da19fa64072c9',1,'FuseSDK']]],
+  ['registercurrency_3abalance_3a',['registerCurrency:Balance:',['../interface_fuse_s_d_k.html#ac07a77edd3b1eeddfe96dba096f15273',1,'FuseSDK']]],
+  ['registerevent_3aparametername_3aparametervalue_3avariablename_3avariablevalue_3a',['registerEvent:ParameterName:ParameterValue:VariableName:VariableValue:',['../interface_fuse_s_d_k.html#a1d6a85a81319fc97ee45e597a086fe0d',1,'FuseSDK']]],
+  ['registerevent_3aparametername_3aparametervalue_3avariables_3a',['registerEvent:ParameterName:ParameterValue:Variables:',['../interface_fuse_s_d_k.html#ab95f385678dcb21bd5dbccf2ec26a760',1,'FuseSDK']]],
+  ['registerevent_3awithdict_3a',['registerEvent:withDict:',['../interface_fuse_s_d_k.html#a6956b2da78e9c5cda4006c93ddfa6718',1,'FuseSDK']]],
+  ['registerforpushtoken',['registerForPushToken',['../interface_fuse_s_d_k.html#aea1b9766935aafaeb49889dc6f7cca93',1,'FuseSDK']]],
+  ['registerforpushtoken_3a',['registerForPushToken:',['../interface_fuse_s_d_k.html#a774f0872e0eb00528391cdc376876446',1,'FuseSDK']]],
+  ['registergender_3a',['registerGender:',['../interface_fuse_s_d_k.html#a2b0c7be7abc4ec4ae6912f295d21e64c',1,'FuseSDK']]],
+  ['registerinapppurchase_3a',['registerInAppPurchase:',['../interface_fuse_s_d_k.html#a2dd50722daab117889c396ff58fe7c27',1,'FuseSDK']]],
+  ['registerinapppurchase_3atxstate_3aprice_3acurrency_3aproductid_3a',['registerInAppPurchase:TxState:Price:Currency:ProductID:',['../interface_fuse_s_d_k.html#a8a1846c84fa16e45488e797dca4c7aaa',1,'FuseSDK']]],
+  ['registerinapppurchase_3atxstate_3aprice_3acurrency_3aproductid_3atransactionid_3a',['registerInAppPurchase:TxState:Price:Currency:ProductID:TransactionID:',['../interface_fuse_s_d_k.html#a2115a4fac03204fd73699ab9ea3314f5',1,'FuseSDK']]],
+  ['registerinapppurchaselist_3a',['registerInAppPurchaseList:',['../interface_fuse_s_d_k.html#ab1029e5beb592f22c1ba0deea9e7bd1c',1,'FuseSDK']]],
+  ['registerlevel_3a',['registerLevel:',['../interface_fuse_s_d_k.html#a37448397d10db8278e2e45d0448c4fa0',1,'FuseSDK']]],
+  ['rejectfriend_3a',['rejectFriend:',['../interface_fuse_s_d_k.html#a8af1416799fd2922db49ed1de406f537',1,'FuseSDK']]],
+  ['removedelegate',['removeDelegate',['../interface_fuse_s_d_k.html#aebd93d2d4e8a6d3029134a3656b003d5',1,'FuseSDK']]],
+  ['removefriend_3a',['removeFriend:',['../interface_fuse_s_d_k.html#a1556fd18ab2ae7f062c9d2ebbe2498fc',1,'FuseSDK']]],
+  ['respondtoapplicationlaunchoptions_3aapplication_3a',['respondToApplicationLaunchOptions:Application:',['../interface_fuse_s_d_k.html#aa37c46cc4e49f09fd9b2b40a548b61fc',1,'FuseSDK']]],
+  ['rewardedadcompletewithobject_3a',['rewardedAdCompleteWithObject:',['../protocol_fuse_delegate-p.html#a3e81f123e745af07c58156c154c13cdc',1,'FuseDelegate-p']]]
 ];

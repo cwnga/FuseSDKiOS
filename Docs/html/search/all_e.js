@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['timeupdated_3a',['timeUpdated:',['../protocol_fuse_delegate-p.html#a85c5468cf940315584698956edcbbdfd',1,'FuseDelegate-p']]],
-  ['twitterlogin_3a',['twitterLogin:',['../interface_fuse_a_p_i.html#add5138c113d6e4c1201f70bf8b84eb02',1,'FuseAPI']]],
-  ['twitterlogin_3aalias_3a',['twitterLogin:Alias:',['../interface_fuse_a_p_i.html#a48950b5880ce336cc601a752bcda1a3a',1,'FuseAPI']]]
+  ['updatefriendslistfromserver',['updateFriendsListFromServer',['../interface_fuse_s_d_k.html#a11a92658dca5be9d79ca19a66bafb91e',1,'FuseSDK']]],
+  ['userpushnotification_3amessage_3a',['userPushNotification:Message:',['../interface_fuse_s_d_k.html#a84916a862fe925004f0c2d3c2b16aa28',1,'FuseSDK']]],
+  ['utctimefromserver',['utcTimeFromServer',['../interface_fuse_s_d_k.html#a60de732b9ecb7bce2439517cc2ca1f71',1,'FuseSDK']]]
 ];

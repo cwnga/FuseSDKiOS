@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['openfeintlogin_3a',['openFeintLogin:',['../interface_fuse_a_p_i.html#ae7db839fcdcf674aa1e456a16655e614',1,'FuseAPI']]],
-  ['overlaywillclose',['overlayWillClose',['../protocol_fuse_overlay_delegate-p.html#a45f598193363390e2d50f9cec694be35',1,'FuseOverlayDelegate-p']]]
+  ['preloadadforzoneid_3a',['preloadAdForZoneID:',['../interface_fuse_s_d_k.html#a2e80d673366877a4bcfc6fe86031d526',1,'FuseSDK']]],
+  ['purchaseverification_3atransactionid_3aoriginaltransactionid_3a',['purchaseVerification:TransactionID:OriginalTransactionID:',['../protocol_fuse_delegate-p.html#a74e3e8647db995888bdf94c64d5ad26b',1,'FuseDelegate-p']]]
 ];
