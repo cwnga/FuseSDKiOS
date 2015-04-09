@@ -2,9 +2,9 @@
 
 ## Current Version
 
-Version: 1.38.3
+Version: 2.0.2
 
-Released: March 12th, 2015
+Released: April 9th, 2015
 
 ## To Download
 The easiest way to obtain the Fuse SDK is to click the "Download ZIP" button located in the right-hand navigation pane of the Github repository page.
@@ -24,9 +24,16 @@ Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an acc
 
 ## Release Notes
 
+### 2.0.2
+April 9th, 2015
+* IAP and Virtual Good offers
+* Rewarded video enhancements
+* Interface updates
+* FuseAPI deprecated - please use FuseSDK
+
 ### 1.38.3
 March 12th, 2015
-* fix for rare orientation issue
+* Fix for rare orientation issue
 
 ### 1.38.2
 March 9th, 2015
