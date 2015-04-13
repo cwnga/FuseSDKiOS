@@ -17,7 +17,7 @@ Please review the [integration instructions](https://wiki.fusepowered.com/index.
 
 * [Integration Instructions](http://wiki.fusepowered.com/index.php/IOS)
 * [Inline Code Reference](http://fusepowered.github.io/FuseSDKiOS/)
-* [Fuse SDK Class Reference](http://fusepowered.github.io/FuseSDKiOS/Docs/html/interface_fuse_a_p_i.html)
+* [Fuse SDK Class Reference](http://fusepowered.github.io/FuseSDKiOS/Docs/html/interface_fuse_s_d_k.html)
 
 ## Need an Account?
 Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an account to get started!
