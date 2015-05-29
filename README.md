@@ -2,9 +2,9 @@
 
 ## Current Version
 
-Version: 2.0.5
+Version: 2.1.0
 
-Released: May 11th, 2015
+Released: May 29th, 2015
 
 ## To Download
 The easiest way to obtain the Fuse SDK is to click the "Download ZIP" button located in the right-hand navigation pane of the Github repository page.
@@ -23,6 +23,14 @@ Please review the [integration instructions](https://wiki.fusepowered.com/index.
 Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an account to get started!
 
 ## Release Notes
+
+### 2.1.0
+May 29th, 2015
+* Virtual goods purchase tracking
+* Added new segmentation functionality
+* Added new gender enums
+* Bug fixes
+* Ad Provider updates
 
 ### 2.0.5
 May 11th, 2015
