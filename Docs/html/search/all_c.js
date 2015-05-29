@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['sessionloginerror_3a',['sessionLoginError:',['../protocol_fuse_delegate-p.html#a24b19ff8cc73955c5cc3b84428b302b0',1,'FuseDelegate-p']]],
-  ['sessionstartreceived',['sessionStartReceived',['../protocol_fuse_delegate-p.html#a4278f68e73dc20a7a24b331959a1872c',1,'FuseDelegate-p']]],
-  ['setdelegate_3a',['setDelegate:',['../interface_fuse_s_d_k.html#a46ad48419c53d45f417d9b0561061455',1,'FuseSDK']]],
-  ['setplatform_3a',['setPlatform:',['../interface_fuse_s_d_k.html#a4400b7bb4b8e108c38405c47eba69b5c',1,'FuseSDK']]],
-  ['showadforzoneid_3aoptions_3a',['showAdForZoneID:options:',['../interface_fuse_s_d_k.html#aba0c488866771c47887ac847c2cd884e',1,'FuseSDK']]],
-  ['startsession_3adelegate_3awithoptions_3a',['startSession:delegate:withOptions:',['../interface_fuse_s_d_k.html#adf7ed64a02b9540c9ded4b931ea4e400',1,'FuseSDK']]]
+  ['preloadadforzoneid_3a',['preloadAdForZoneID:',['../interface_fuse_s_d_k.html#a2e80d673366877a4bcfc6fe86031d526',1,'FuseSDK']]],
+  ['purchaseverification_3atransactionid_3aoriginaltransactionid_3a',['purchaseVerification:TransactionID:OriginalTransactionID:',['../protocol_fuse_delegate-p.html#a74e3e8647db995888bdf94c64d5ad26b',1,'FuseDelegate-p']]]
 ];

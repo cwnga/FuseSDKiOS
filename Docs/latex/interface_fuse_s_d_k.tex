@@ -59,6 +59,8 @@ Inheritance diagram for Fuse\+S\+D\+K\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em This method records in-\/app purchases in the Fuse system without using the S\+K\+Payment\+Transaction data type. \end{DoxyCompactList}\item 
 (void) + \hyperlink{interface_fuse_s_d_k_a2115a4fac03204fd73699ab9ea3314f5}{register\+In\+App\+Purchase\+:\+Tx\+State\+:\+Price\+:\+Currency\+:\+Product\+I\+D\+:\+Transaction\+I\+D\+:}
 \begin{DoxyCompactList}\small\item\em This method records in-\/app purchases in the Fuse system without using the S\+K\+Payment\+Transaction data type. \end{DoxyCompactList}\item 
+(void) + \hyperlink{interface_fuse_s_d_k_abd1bc1b2e677978fb0e559cd9f7a72a9}{register\+Virtual\+Goods\+Purchase\+:\+Amount\+:\+Currency\+I\+D\+:}
+\begin{DoxyCompactList}\small\item\em This method records purchases of virtual goods. \end{DoxyCompactList}\item 
 (B\+O\+O\+L) + \hyperlink{interface_fuse_s_d_k_abdf624c4ef56ee1c7cac73b37dc4f5fd}{is\+Ad\+Available\+For\+Zone\+I\+D\+:}
 \begin{DoxyCompactList}\small\item\em This method returns if an ad was loaded in a particular zone. \end{DoxyCompactList}\item 
 (void) + \hyperlink{interface_fuse_s_d_k_aba0c488866771c47887ac847c2cd884e}{show\+Ad\+For\+Zone\+I\+D\+:options\+:}
@@ -148,8 +150,14 @@ Inheritance diagram for Fuse\+S\+D\+K\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Send an Apple push notification to another user. \end{DoxyCompactList}\item 
 (void) + \hyperlink{interface_fuse_s_d_k_a9afa8ec3f16cd18706902dd1f38c3501}{friends\+Push\+Notification\+:}
 \begin{DoxyCompactList}\small\item\em Send an Apple push notification to a user's entire friends list. \end{DoxyCompactList}\item 
+(void) + \hyperlink{interface_fuse_s_d_k_ada39e47884f25fc5e6bb1a0acf1831db}{register\+Parental\+Consent\+:}
+\begin{DoxyCompactList}\small\item\em Register the if the user has parental consent. \end{DoxyCompactList}\item 
+(B\+O\+O\+L) + \hyperlink{interface_fuse_s_d_k_a5ad914282112a76cdb9a0692803b4b38}{register\+Custom\+Event\+:with\+Int\+:}
+\begin{DoxyCompactList}\small\item\em Register an integer value for a custom event that was defined on the Fuse Dashboard. \end{DoxyCompactList}\item 
+(B\+O\+O\+L) + \hyperlink{interface_fuse_s_d_k_a4ed3ac41f2d30b078c909b2fa03d913a}{register\+Custom\+Event\+:with\+String\+:}
+\begin{DoxyCompactList}\small\item\em Register a string value for a custom event that was defined on the Fuse Dashboard. \end{DoxyCompactList}\item 
 (void) + \hyperlink{interface_fuse_s_d_k_a37448397d10db8278e2e45d0448c4fa0}{register\+Level\+:}
-\begin{DoxyCompactList}\small\item\em Register the user's current level after they level-\/up. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Register a custom event with an integer value. \end{DoxyCompactList}\item 
 (void) + \hyperlink{interface_fuse_s_d_k_ac07a77edd3b1eeddfe96dba096f15273}{register\+Currency\+:\+Balance\+:}
 \begin{DoxyCompactList}\small\item\em Register a change in the current balances of the user's in-\/app currencies. \end{DoxyCompactList}\item 
 (N\+S\+String $\ast$) + \hyperlink{interface_fuse_s_d_k_ab29213306801eba35d922754a5efa1b0}{get\+Game\+Configuration\+Value\+:}
@@ -1624,6 +1632,76 @@ To better track the currency levels of your users, this method can be used to ke
 \begin{DoxySince}{Since}
 Fuse S\+D\+K version 1.\+25 
 \end{DoxySince}
+\hypertarget{interface_fuse_s_d_k_a5ad914282112a76cdb9a0692803b4b38}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!register\+Custom\+Event\+:with\+Int\+:@{register\+Custom\+Event\+:with\+Int\+:}}
+\index{register\+Custom\+Event\+:with\+Int\+:@{register\+Custom\+Event\+:with\+Int\+:}!Fuse\+S\+D\+K@{Fuse\+S\+D\+K}}
+\subsubsection[{register\+Custom\+Event\+:with\+Int\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) register\+Custom\+Event\+: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{\+\_\+event\+Number}
+\item[{withInt:(int)}]{\+\_\+value}
+\end{DoxyParamCaption}
+}\label{interface_fuse_s_d_k_a5ad914282112a76cdb9a0692803b4b38}
+
+
+Register an integer value for a custom event that was defined on the Fuse Dashboard. 
+
+Tracks integer values for custom events. Note\+: Custom events can only accept integer values or string values, but not both. If you pass an integer value to an event that only accepts strings, then the value will not be stored on the server.
+
+
+\begin{DoxyCode}
+BOOL succeeded = [\hyperlink{interface_fuse_s_d_k}{FuseSDK} registerCustomEvent:1 withInt:42];
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+event\+Number} & \mbox{[}int\mbox{]} The I\+D for the custom event as defined on the Fuse Dashboard \\
+\hline
+{\em \+\_\+value} & \mbox{[}int\mbox{]} The integer value to set for this custom event \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em \mbox{[}\+B\+O\+O\+L\mbox{]}} & Returns Y\+E\+S if the custom event accepts integer values \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySince}{Since}
+Fuse S\+D\+K version 2.\+1.\+0 
+\end{DoxySince}
+\hypertarget{interface_fuse_s_d_k_a4ed3ac41f2d30b078c909b2fa03d913a}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!register\+Custom\+Event\+:with\+String\+:@{register\+Custom\+Event\+:with\+String\+:}}
+\index{register\+Custom\+Event\+:with\+String\+:@{register\+Custom\+Event\+:with\+String\+:}!Fuse\+S\+D\+K@{Fuse\+S\+D\+K}}
+\subsubsection[{register\+Custom\+Event\+:with\+String\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) register\+Custom\+Event\+: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{\+\_\+event\+Number}
+\item[{withString:(N\+S\+String $\ast$)}]{\+\_\+value}
+\end{DoxyParamCaption}
+}\label{interface_fuse_s_d_k_a4ed3ac41f2d30b078c909b2fa03d913a}
+
+
+Register a string value for a custom event that was defined on the Fuse Dashboard. 
+
+Tracks string values for custom events. Note\+: Custom events can only accept integer values or string values, but not both. If you pass a string value to an event that only accepts integers, then the value will not be stored on the server.
+
+
+\begin{DoxyCode}
+BOOL succeeded = [\hyperlink{interface_fuse_s_d_k}{FuseSDK} registerCustomEvent:3 withString:\textcolor{stringliteral}{@"This is a custom event"}];
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+event\+Number} & \mbox{[}int\mbox{]} The I\+D for the custom event as defined on the Fuse Dashboard \\
+\hline
+{\em \+\_\+value} & \mbox{[}N\+S\+String$\ast$\mbox{]} A string value for the custom event. The string can have a maximum of 255 characters \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em \mbox{[}\+B\+O\+O\+L\mbox{]}} & Returns Y\+E\+S if the custom event accepts string values \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySince}{Since}
+Fuse S\+D\+K version 2.\+1.\+0 
+\end{DoxySince}
 \hypertarget{interface_fuse_s_d_k_a1d6a85a81319fc97ee45e597a086fe0d}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!register\+Event\+:\+Parameter\+Name\+:\+Parameter\+Value\+:\+Variable\+Name\+:\+Variable\+Value\+:@{register\+Event\+:\+Parameter\+Name\+:\+Parameter\+Value\+:\+Variable\+Name\+:\+Variable\+Value\+:}}
 \index{register\+Event\+:\+Parameter\+Name\+:\+Parameter\+Value\+:\+Variable\+Name\+:\+Variable\+Value\+:@{register\+Event\+:\+Parameter\+Name\+:\+Parameter\+Value\+:\+Variable\+Name\+:\+Variable\+Value\+:}!Fuse\+S\+D\+K@{Fuse\+S\+D\+K}}
 \subsubsection[{register\+Event\+:\+Parameter\+Name\+:\+Parameter\+Value\+:\+Variable\+Name\+:\+Variable\+Value\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) register\+Event\+: 
@@ -1845,9 +1923,11 @@ If a gender is known or suspected for a user, call the following method to assig
 \textcolor{comment}{// The enumerated type definition is as follows:}
 \textcolor{keyword}{enum} kFuseGender
 \{
-   FUSE\_GENDER\_UNKNOWN = 0,
-   FUSE\_GENDER\_MALE,
-   FUSE\_GENDER\_FEMALE,
+    FUSE\_GENDER\_UNKNOWN = 0,
+    FUSE\_GENDER\_MALE,
+    FUSE\_GENDER\_FEMALE,
+    FUSE\_GENDER\_UNDECIDED,
+    FUSE\_GENDER\_WITHHELD
 \};
 \end{DoxyCode}
 
@@ -1937,6 +2017,8 @@ Call this method directly after an in-\/app purchase is made once it has been co
 \href{http://en.wikipedia.org/wiki/ISO_4217}{\tt http\+://en.\+wikipedia.\+org/wiki/\+I\+S\+O\+\_\+4217} for more information on I\+S\+O 4217 currency codes. 
 
 \hyperlink{interface_fuse_s_d_k_a2dd50722daab117889c396ff58fe7c27}{+ register\+In\+App\+Purchase\+:} for more information on calling this function with the S\+K\+Payment\+Transaction object. 
+
+\href{https://developer.apple.com/library/ios/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html}{\tt https\+://developer.\+apple.\+com/library/ios/releasenotes/\+General/\+Validate\+App\+Store\+Receipt/\+Chapters/\+Validate\+Remotely.\+html} For information how to collect Receipt Data 
 \end{DoxySeeAlso}
 \begin{DoxySince}{Since}
 Fuse S\+D\+K version 1.\+29 
@@ -1992,6 +2074,8 @@ Call this method directly after an in-\/app purchase is made once it has been co
 \href{http://en.wikipedia.org/wiki/ISO_4217}{\tt http\+://en.\+wikipedia.\+org/wiki/\+I\+S\+O\+\_\+4217} for more information on I\+S\+O 4217 currency codes. 
 
 \hyperlink{interface_fuse_s_d_k_a2dd50722daab117889c396ff58fe7c27}{+ register\+In\+App\+Purchase\+:} for more information on calling this function with the S\+K\+Payment\+Transaction object. 
+
+\href{https://developer.apple.com/library/ios/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html}{\tt https\+://developer.\+apple.\+com/library/ios/releasenotes/\+General/\+Validate\+App\+Store\+Receipt/\+Chapters/\+Validate\+Remotely.\+html} For information how to collect Receipt Data 
 \end{DoxySeeAlso}
 \begin{DoxySince}{Since}
 Fuse S\+D\+K version 1.\+29 
@@ -2034,7 +2118,7 @@ After receiving the list of in-\/app purchases from the Apple system, this metho
 }\label{interface_fuse_s_d_k_a37448397d10db8278e2e45d0448c4fa0}
 
 
-Register the user's current level after they level-\/up. 
+Register a custom event with an integer value. 
 
 This method can specifically track user levels to more accurately measure application penetration
 
@@ -2051,6 +2135,60 @@ This method can specifically track user levels to more accurately measure applic
 \end{DoxyParams}
 \begin{DoxySince}{Since}
 Fuse S\+D\+K version 1.\+25 
+\end{DoxySince}
+\hypertarget{interface_fuse_s_d_k_ada39e47884f25fc5e6bb1a0acf1831db}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!register\+Parental\+Consent\+:@{register\+Parental\+Consent\+:}}
+\index{register\+Parental\+Consent\+:@{register\+Parental\+Consent\+:}!Fuse\+S\+D\+K@{Fuse\+S\+D\+K}}
+\subsubsection[{register\+Parental\+Consent\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) register\+Parental\+Consent\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{\+\_\+consent}
+\end{DoxyParamCaption}
+}\label{interface_fuse_s_d_k_ada39e47884f25fc5e6bb1a0acf1831db}
+
+
+Register the if the user has parental consent. 
+
+This method tracks if parental consent has been obtained
+
+
+\begin{DoxyCode}
+[\hyperlink{interface_fuse_s_d_k}{FuseSDK} registerParentalConsent:YES];
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+consent} & \mbox{[}B\+O\+O\+L\mbox{]} If the user has parental consent \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Fuse S\+D\+K version 2.\+1.\+0 
+\end{DoxySince}
+\hypertarget{interface_fuse_s_d_k_abd1bc1b2e677978fb0e559cd9f7a72a9}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!register\+Virtual\+Goods\+Purchase\+:\+Amount\+:\+Currency\+I\+D\+:@{register\+Virtual\+Goods\+Purchase\+:\+Amount\+:\+Currency\+I\+D\+:}}
+\index{register\+Virtual\+Goods\+Purchase\+:\+Amount\+:\+Currency\+I\+D\+:@{register\+Virtual\+Goods\+Purchase\+:\+Amount\+:\+Currency\+I\+D\+:}!Fuse\+S\+D\+K@{Fuse\+S\+D\+K}}
+\subsubsection[{register\+Virtual\+Goods\+Purchase\+:\+Amount\+:\+Currency\+I\+D\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) register\+Virtual\+Goods\+Purchase\+: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{\+\_\+virtual\+Goods\+I\+D}
+\item[{Amount:(int)}]{\+\_\+purchase\+Amount}
+\item[{CurrencyID:(int)}]{\+\_\+currency\+I\+D}
+\end{DoxyParamCaption}
+}\label{interface_fuse_s_d_k_abd1bc1b2e677978fb0e559cd9f7a72a9}
+
+
+This method records purchases of virtual goods. 
+
+Call this method directly after a virtual good has been purchased successfully.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+virtual\+Goods\+I\+D} & \mbox{[}int\mbox{]} The I\+D of the virtual good as defined in the Fuse Dashboard. \\
+\hline
+{\em \+\_\+purchase\+Amount} & \mbox{[}int\mbox{]} The amount of currency spent on the virtual good. \\
+\hline
+{\em \+\_\+currency\+I\+D} & \mbox{[}int\mbox{]} The I\+D of the currency used as defined on the Fuse Dashboard. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Fuse S\+D\+K version 2.\+1.\+0 
 \end{DoxySince}
 \hypertarget{interface_fuse_s_d_k_a8af1416799fd2922db49ed1de406f537}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!reject\+Friend\+:@{reject\+Friend\+:}}
 \index{reject\+Friend\+:@{reject\+Friend\+:}!Fuse\+S\+D\+K@{Fuse\+S\+D\+K}}

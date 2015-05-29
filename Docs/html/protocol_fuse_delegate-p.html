@@ -185,9 +185,15 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a9577824db67c469466bd720d0193273d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_fuse_delegate-p.html#a9577824db67c469466bd720d0193273d">virtualGoodsOfferAcceptedWithObject:</a></td></tr>
 <tr class="memdesc:a9577824db67c469466bd720d0193273d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to acknowledge an virtual goods offer was accepted.  <a href="#a9577824db67c469466bd720d0193273d">More...</a><br /></td></tr>
 <tr class="separator:a9577824db67c469466bd720d0193273d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95df901f497b5a80383dd6eb2aa9c43d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_fuse_delegate-p.html#a95df901f497b5a80383dd6eb2aa9c43d">onAdClickedWithMessage:</a></td></tr>
+<tr class="memdesc:a95df901f497b5a80383dd6eb2aa9c43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to acknowledge an News Ad was clicked and the app should react to _message.  <a href="#a95df901f497b5a80383dd6eb2aa9c43d">More...</a><br /></td></tr>
+<tr class="separator:a95df901f497b5a80383dd6eb2aa9c43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1513d7db889fcaa54d7248f441b74072"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_fuse_delegate-p.html#a1513d7db889fcaa54d7248f441b74072">adFailedToDisplay</a></td></tr>
 <tr class="memdesc:a1513d7db889fcaa54d7248f441b74072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to inform no ad was displayed from showAdForZoneID:withOptions: call.  <a href="#a1513d7db889fcaa54d7248f441b74072">More...</a><br /></td></tr>
 <tr class="separator:a1513d7db889fcaa54d7248f441b74072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d725902d1f6c4c19d3ce3b65d60052b"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_fuse_delegate-p.html#a2d725902d1f6c4c19d3ce3b65d60052b">handleAdClickWithURL:</a></td></tr>
+<tr class="memdesc:a2d725902d1f6c4c19d3ce3b65d60052b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If implemented, AdRally ads will pass this callback including the click-through URL back to the application. It is then the application's responsibility to present an age gate and continue with the click-through if appropriate.  <a href="#a2d725902d1f6c4c19d3ce3b65d60052b">More...</a><br /></td></tr>
+<tr class="separator:a2d725902d1f6c4c19d3ce3b65d60052b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafc293cd46be3bd70eeb60971b961a51"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_fuse_delegate-p.html#aafc293cd46be3bd70eeb60971b961a51">adWillClose</a></td></tr>
 <tr class="memdesc:aafc293cd46be3bd70eeb60971b961a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to indicates when control is being returned to the application.  <a href="#aafc293cd46be3bd70eeb60971b961a51">More...</a><br /></td></tr>
 <tr class="separator:aafc293cd46be3bd70eeb60971b961a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -826,6 +832,33 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2d725902d1f6c4c19d3ce3b65d60052b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) handleAdClickWithURL: </td>
+          <td></td>
+          <td class="paramtype">(NSURL *)&#160;</td>
+          <td class="paramname"><em>_url</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If implemented, AdRally ads will pass this callback including the click-through URL back to the application. It is then the application's responsibility to present an age gate and continue with the click-through if appropriate. </p>
+<p>In Order to use this Delegate Call, The option kFuseSDKOptionKey_HandleAdURLs must be passed with the value  </p><dl class="section since"><dt>Since</dt><dd>Fuse SDK version 2.1.0 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ad46a55d7852f92e7615ce5168141bc7a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -931,6 +964,47 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a95df901f497b5a80383dd6eb2aa9c43d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onAdClickedWithMessage: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>_message</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback to acknowledge an News Ad was clicked and the app should react to _message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_message</td><td>Dashboard set token for the application to respond to. Ex. 'openStore'</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line">-(void) onAdClickedWithMessage:(NSString*) _message</div>
+<div class="line">{</div>
+<div class="line">   <span class="keywordflow">if</span>([_message isEqualToString:<span class="stringliteral">@&quot;openStore&quot;</span>])</div>
+<div class="line">   {</div>
+<div class="line">       [game OpenCoinStore];</div>
+<div class="line">   }</div>
+<div class="line"></div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section since"><dt>Since</dt><dd>Fuse SDK version 2.1.0 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a74e3e8647db995888bdf94c64d5ad26b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -988,11 +1062,13 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">_verified</td><td>[NSSNumber*] This is the _verified bit: 1 indicates that the transaction was valid. 0 indicates that the transaction should be treated with suspicion. </td></tr>
     <tr><td class="paramname">_tx_id</td><td>[NSString*] The transaction ID specified by Apple </td></tr>
-    <tr><td class="paramname">_o_tx_id</td><td>[NSString*] The original transaction ID specified by Apple (can be different than the transaction ID because the transaction could be a reinstatement of a previous purchase) </td></tr>
+    <tr><td class="paramname">_o_tx_id</td><td>[NSString*] The original transaction ID specified by Apple (can be different than the transaction ID because the transaction could be a reinstatement of a previous purchase)</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_fuse_s_d_k.html#a2dd50722daab117889c396ff58fe7c27" title="This method records in-app purchases in the Fuse system. ">+ registerInAppPurchase: (FuseSDK)</a> for more information on how to invoke this process </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://developer.apple.com/library/ios/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html">https://developer.apple.com/library/ios/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html</a> For information how to collect Receipt when registering in app purchases </dd>
+<dd>
+<a class="el" href="interface_fuse_s_d_k.html#a2dd50722daab117889c396ff58fe7c27" title="This method records in-app purchases in the Fuse system. ">+ registerInAppPurchase: (FuseSDK)</a> for more information on how to invoke this process </dd></dl>
 
 </div>
 </div>
@@ -1160,7 +1236,7 @@ EFuseError for more information on all possible error values </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="protocol_fuse_delegate-p.html">FuseDelegate</a></li>
-    <li class="footer">Generated on Thu Apr 9 2015 17:08:38 for FuseSDK (iOS) by
+    <li class="footer">Generated on Fri May 29 2015 10:37:48 for FuseSDK (iOS) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

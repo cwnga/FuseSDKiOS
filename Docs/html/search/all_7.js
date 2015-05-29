@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['libraryversion',['libraryVersion',['../interface_fuse_s_d_k.html#a56f5fc3ba2e03d3dbe9d681b3500108a',1,'FuseSDK']]]
+  ['iapofferacceptedwithobject_3a',['IAPOfferAcceptedWithObject:',['../protocol_fuse_delegate-p.html#ad46a55d7852f92e7615ce5168141bc7a',1,'FuseDelegate-p']]],
+  ['isadavailableforzoneid_3a',['isAdAvailableForZoneID:',['../interface_fuse_s_d_k.html#abdf624c4ef56ee1c7cac73b37dc4f5fd',1,'FuseSDK']]],
+  ['isnotificationavailable',['isNotificationAvailable',['../interface_fuse_s_d_k.html#a23c30bc15f208daf639ece250b8a5935',1,'FuseSDK']]],
+  ['itemname',['itemName',['../interface_fuse_i_a_p_offer_object.html#afc44eae0ea1010ef7b02515dfc156e68',1,'FuseIAPOfferObject']]]
 ];

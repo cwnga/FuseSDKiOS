@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['migratefriends_3a',['migrateFriends:',['../interface_fuse_s_d_k.html#a199e36abe741ecdf8062d1afddc6e146',1,'FuseSDK']]]
+  ['libraryversion',['libraryVersion',['../interface_fuse_s_d_k.html#a56f5fc3ba2e03d3dbe9d681b3500108a',1,'FuseSDK']]]
 ];

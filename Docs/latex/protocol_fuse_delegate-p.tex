@@ -58,8 +58,12 @@ Inheritance diagram for $<$Fuse\+Delegate$>$\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Callback to acknowledge an iap offer was accepted. \end{DoxyCompactList}\item 
 (void) -\/ \hyperlink{protocol_fuse_delegate-p_a9577824db67c469466bd720d0193273d}{virtual\+Goods\+Offer\+Accepted\+With\+Object\+:}
 \begin{DoxyCompactList}\small\item\em Callback to acknowledge an virtual goods offer was accepted. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_fuse_delegate-p_a95df901f497b5a80383dd6eb2aa9c43d}{on\+Ad\+Clicked\+With\+Message\+:}
+\begin{DoxyCompactList}\small\item\em Callback to acknowledge an News Ad was clicked and the app should react to \+\_\+message. \end{DoxyCompactList}\item 
 (void) -\/ \hyperlink{protocol_fuse_delegate-p_a1513d7db889fcaa54d7248f441b74072}{ad\+Failed\+To\+Display}
 \begin{DoxyCompactList}\small\item\em Callback to inform no ad was displayed from show\+Ad\+For\+Zone\+I\+D\+:with\+Options\+: call. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_fuse_delegate-p_a2d725902d1f6c4c19d3ce3b65d60052b}{handle\+Ad\+Click\+With\+U\+R\+L\+:}
+\begin{DoxyCompactList}\small\item\em If implemented, Ad\+Rally ads will pass this callback including the click-\/through U\+R\+L back to the application. It is then the application's responsibility to present an age gate and continue with the click-\/through if appropriate. \end{DoxyCompactList}\item 
 (void) -\/ \hyperlink{protocol_fuse_delegate-p_aafc293cd46be3bd70eeb60971b961a51}{ad\+Will\+Close}
 \begin{DoxyCompactList}\small\item\em Callback to indicates when control is being returned to the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -530,6 +534,20 @@ This method indicates that the game configuration values have been received by t
 To avoid polling values before they are sent from the server, this callback can be used to determine when they are valid. These values are update when a user starts or resumes a session. \begin{DoxySeeAlso}{See also}
 \hyperlink{interface_fuse_s_d_k_ab29213306801eba35d922754a5efa1b0}{+ get\+Game\+Configuration\+Value\+: (\+Fuse\+S\+D\+K)} for more information on reading game configuration values once valid 
 \end{DoxySeeAlso}
+\hypertarget{protocol_fuse_delegate-p_a2d725902d1f6c4c19d3ce3b65d60052b}{}\index{Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}!handle\+Ad\+Click\+With\+U\+R\+L\+:@{handle\+Ad\+Click\+With\+U\+R\+L\+:}}
+\index{handle\+Ad\+Click\+With\+U\+R\+L\+:@{handle\+Ad\+Click\+With\+U\+R\+L\+:}!Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}}
+\subsubsection[{handle\+Ad\+Click\+With\+U\+R\+L\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) handle\+Ad\+Click\+With\+U\+R\+L\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L $\ast$)}]{\+\_\+url}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_fuse_delegate-p_a2d725902d1f6c4c19d3ce3b65d60052b}
+
+
+If implemented, Ad\+Rally ads will pass this callback including the click-\/through U\+R\+L back to the application. It is then the application's responsibility to present an age gate and continue with the click-\/through if appropriate. 
+
+In Order to use this Delegate Call, The option k\+Fuse\+S\+D\+K\+Option\+Key\+\_\+\+Handle\+Ad\+U\+R\+Ls must be passed with the value  \begin{DoxySince}{Since}
+Fuse S\+D\+K version 2.\+1.\+0 
+\end{DoxySince}
 \hypertarget{protocol_fuse_delegate-p_ad46a55d7852f92e7615ce5168141bc7a}{}\index{Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}!I\+A\+P\+Offer\+Accepted\+With\+Object\+:@{I\+A\+P\+Offer\+Accepted\+With\+Object\+:}}
 \index{I\+A\+P\+Offer\+Accepted\+With\+Object\+:@{I\+A\+P\+Offer\+Accepted\+With\+Object\+:}!Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}}
 \subsubsection[{I\+A\+P\+Offer\+Accepted\+With\+Object\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) I\+A\+P\+Offer\+Accepted\+With\+Object\+: 
@@ -603,6 +621,38 @@ To handle any possible action as a result of an in-\/game notification being dis
 \begin{DoxySeeAlso}{See also}
 \hyperlink{interface_fuse_s_d_k_a279e4cb8e95a3e78197761156a7de50d}{+ display\+Notifications (\+Fuse\+S\+D\+K)} for more information on displaying in-\/game notifications 
 \end{DoxySeeAlso}
+\hypertarget{protocol_fuse_delegate-p_a95df901f497b5a80383dd6eb2aa9c43d}{}\index{Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}!on\+Ad\+Clicked\+With\+Message\+:@{on\+Ad\+Clicked\+With\+Message\+:}}
+\index{on\+Ad\+Clicked\+With\+Message\+:@{on\+Ad\+Clicked\+With\+Message\+:}!Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}}
+\subsubsection[{on\+Ad\+Clicked\+With\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) on\+Ad\+Clicked\+With\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{\+\_\+message}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_fuse_delegate-p_a95df901f497b5a80383dd6eb2aa9c43d}
+
+
+Callback to acknowledge an News Ad was clicked and the app should react to \+\_\+message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+message} & Dashboard set token for the application to respond to. Ex. 'open\+Store'\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+-(void) onAdClickedWithMessage:(NSString*) \_message
+\{
+   \textcolor{keywordflow}{if}([\_message isEqualToString:\textcolor{stringliteral}{@"openStore"}])
+   \{
+       [game OpenCoinStore];
+   \}
+
+\}
+\end{DoxyCode}
+
+
+\begin{DoxySince}{Since}
+Fuse S\+D\+K version 2.\+1.\+0 
+\end{DoxySince}
 \hypertarget{protocol_fuse_delegate-p_a74e3e8647db995888bdf94c64d5ad26b}{}\index{Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}!purchase\+Verification\+:\+Transaction\+I\+D\+:\+Original\+Transaction\+I\+D\+:@{purchase\+Verification\+:\+Transaction\+I\+D\+:\+Original\+Transaction\+I\+D\+:}}
 \index{purchase\+Verification\+:\+Transaction\+I\+D\+:\+Original\+Transaction\+I\+D\+:@{purchase\+Verification\+:\+Transaction\+I\+D\+:\+Original\+Transaction\+I\+D\+:}!Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}}
 \subsubsection[{purchase\+Verification\+:\+Transaction\+I\+D\+:\+Original\+Transaction\+I\+D\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) purchase\+Verification\+: 
@@ -643,10 +693,12 @@ This method is optional can indicates via the \+\_\+verified bit if the in-\/app
 \hline
 {\em \+\_\+tx\+\_\+id} & \mbox{[}N\+S\+String$\ast$\mbox{]} The transaction I\+D specified by Apple \\
 \hline
-{\em \+\_\+o\+\_\+tx\+\_\+id} & \mbox{[}N\+S\+String$\ast$\mbox{]} The original transaction I\+D specified by Apple (can be different than the transaction I\+D because the transaction could be a reinstatement of a previous purchase) \\
+{\em \+\_\+o\+\_\+tx\+\_\+id} & \mbox{[}N\+S\+String$\ast$\mbox{]} The original transaction I\+D specified by Apple (can be different than the transaction I\+D because the transaction could be a reinstatement of a previous purchase)\\
 \hline
 \end{DoxyParams}
 \begin{DoxySeeAlso}{See also}
+\href{https://developer.apple.com/library/ios/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html}{\tt https\+://developer.\+apple.\+com/library/ios/releasenotes/\+General/\+Validate\+App\+Store\+Receipt/\+Chapters/\+Validate\+Remotely.\+html} For information how to collect Receipt when registering in app purchases 
+
 \hyperlink{interface_fuse_s_d_k_a2dd50722daab117889c396ff58fe7c27}{+ register\+In\+App\+Purchase\+: (\+Fuse\+S\+D\+K)} for more information on how to invoke this process 
 \end{DoxySeeAlso}
 \hypertarget{protocol_fuse_delegate-p_a3e81f123e745af07c58156c154c13cdc}{}\index{Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}!rewarded\+Ad\+Complete\+With\+Object\+:@{rewarded\+Ad\+Complete\+With\+Object\+:}}

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['zonehasiapoffer_3a',['zoneHasIAPOffer:',['../interface_fuse_s_d_k.html#adb67f99bc2972de6774949fc2849f548',1,'FuseSDK']]],
-  ['zonehasrewarded_3a',['zoneHasRewarded:',['../interface_fuse_s_d_k.html#ad98a95cc63498dee7256258206808056',1,'FuseSDK']]],
-  ['zonehasvirtualgoodsoffer_3a',['zoneHasVirtualGoodsOffer:',['../interface_fuse_s_d_k.html#a898ce4e1d5235fd40627429d1f7bf138',1,'FuseSDK']]]
+  ['updatefriendslistfromserver',['updateFriendsListFromServer',['../interface_fuse_s_d_k.html#a11a92658dca5be9d79ca19a66bafb91e',1,'FuseSDK']]],
+  ['userpushnotification_3amessage_3a',['userPushNotification:Message:',['../interface_fuse_s_d_k.html#a84916a862fe925004f0c2d3c2b16aa28',1,'FuseSDK']]],
+  ['utctimefromserver',['utcTimeFromServer',['../interface_fuse_s_d_k.html#a60de732b9ecb7bce2439517cc2ca1f71',1,'FuseSDK']]]
 ];
