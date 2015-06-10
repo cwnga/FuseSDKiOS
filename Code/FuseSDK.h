@@ -2043,9 +2043,10 @@
  *
  * @param _currencyType [int] Enter 1-4, representing up to four different in-app resources.  These values can be set specific to the application.
  * @param _balance [int] The updated balance of the user
+ * @retval [BOOL] Returns YES if the _currencyType is within the valid range
  * @since Fuse SDK version 1.25
  */
-+(void) registerCurrency:(int)_currencyType Balance:(int)_balance;
++(BOOL) registerCurrency:(int)_currencyType Balance:(int)_balance;
 
 
 
