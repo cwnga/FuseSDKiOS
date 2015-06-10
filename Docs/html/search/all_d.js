@@ -3,7 +3,7 @@ var searchData=
   ['registerage_3a',['registerAge:',['../interface_fuse_s_d_k.html#a33903ca8d52be440186c4bbf1cbe510c',1,'FuseSDK']]],
   ['registerbirthday_3amonth_3aday_3a',['registerBirthday:Month:Day:',['../interface_fuse_s_d_k.html#a5dcbaec8b00d90c4970e1b752e5dc719',1,'FuseSDK']]],
   ['registercrash_3a',['registerCrash:',['../interface_fuse_s_d_k.html#a9afd8c386a2b6664641da19fa64072c9',1,'FuseSDK']]],
-  ['registercurrency_3abalance_3a',['registerCurrency:Balance:',['../interface_fuse_s_d_k.html#ac07a77edd3b1eeddfe96dba096f15273',1,'FuseSDK']]],
+  ['registercurrency_3abalance_3a',['registerCurrency:Balance:',['../interface_fuse_s_d_k.html#a3321559b952097db1142e04c08da80f0',1,'FuseSDK']]],
   ['registercustomevent_3awithint_3a',['registerCustomEvent:withInt:',['../interface_fuse_s_d_k.html#a5ad914282112a76cdb9a0692803b4b38',1,'FuseSDK']]],
   ['registercustomevent_3awithstring_3a',['registerCustomEvent:withString:',['../interface_fuse_s_d_k.html#a4ed3ac41f2d30b078c909b2fa03d913a',1,'FuseSDK']]],
   ['registerevent_3aparametername_3aparametervalue_3avariablename_3avariablevalue_3a',['registerEvent:ParameterName:ParameterValue:VariableName:VariableValue:',['../interface_fuse_s_d_k.html#a1d6a85a81319fc97ee45e597a086fe0d',1,'FuseSDK']]],

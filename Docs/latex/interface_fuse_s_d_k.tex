@@ -158,7 +158,7 @@ Inheritance diagram for Fuse\+S\+D\+K\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Register a string value for a custom event that was defined on the Fuse Dashboard. \end{DoxyCompactList}\item 
 (void) + \hyperlink{interface_fuse_s_d_k_a37448397d10db8278e2e45d0448c4fa0}{register\+Level\+:}
 \begin{DoxyCompactList}\small\item\em Register a custom event with an integer value. \end{DoxyCompactList}\item 
-(void) + \hyperlink{interface_fuse_s_d_k_ac07a77edd3b1eeddfe96dba096f15273}{register\+Currency\+:\+Balance\+:}
+(B\+O\+O\+L) + \hyperlink{interface_fuse_s_d_k_a3321559b952097db1142e04c08da80f0}{register\+Currency\+:\+Balance\+:}
 \begin{DoxyCompactList}\small\item\em Register a change in the current balances of the user's in-\/app currencies. \end{DoxyCompactList}\item 
 (N\+S\+String $\ast$) + \hyperlink{interface_fuse_s_d_k_ab29213306801eba35d922754a5efa1b0}{get\+Game\+Configuration\+Value\+:}
 \begin{DoxyCompactList}\small\item\em This method retrieves server configuration values. \end{DoxyCompactList}\item 
@@ -1602,14 +1602,14 @@ Now create a method that corresponds to the registered uncaught exception listen
 {\em \+\_\+exception} & \mbox{[}N\+S\+Exception $\ast$\mbox{]} The exception object passed to the exception handler method by the system. \\
 \hline
 \end{DoxyParams}
-\hypertarget{interface_fuse_s_d_k_ac07a77edd3b1eeddfe96dba096f15273}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!register\+Currency\+:\+Balance\+:@{register\+Currency\+:\+Balance\+:}}
+\hypertarget{interface_fuse_s_d_k_a3321559b952097db1142e04c08da80f0}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!register\+Currency\+:\+Balance\+:@{register\+Currency\+:\+Balance\+:}}
 \index{register\+Currency\+:\+Balance\+:@{register\+Currency\+:\+Balance\+:}!Fuse\+S\+D\+K@{Fuse\+S\+D\+K}}
-\subsubsection[{register\+Currency\+:\+Balance\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) register\+Currency\+: 
+\subsubsection[{register\+Currency\+:\+Balance\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) register\+Currency\+: 
 \begin{DoxyParamCaption}
 \item[{(int)}]{\+\_\+currency\+Type}
 \item[{Balance:(int)}]{\+\_\+balance}
 \end{DoxyParamCaption}
-}\label{interface_fuse_s_d_k_ac07a77edd3b1eeddfe96dba096f15273}
+}\label{interface_fuse_s_d_k_a3321559b952097db1142e04c08da80f0}
 
 
 Register a change in the current balances of the user's in-\/app currencies. 
@@ -1629,6 +1629,11 @@ To better track the currency levels of your users, this method can be used to ke
 {\em \+\_\+balance} & \mbox{[}int\mbox{]} The updated balance of the user \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em \mbox{[}\+B\+O\+O\+L\mbox{]}} & Returns Y\+E\+S if the \+\_\+currency\+Type is within the valid range \\
+\hline
+\end{DoxyRetVals}
 \begin{DoxySince}{Since}
 Fuse S\+D\+K version 1.\+25 
 \end{DoxySince}

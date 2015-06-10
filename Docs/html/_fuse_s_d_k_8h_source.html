@@ -379,22 +379,22 @@ $(document).ready(function(){initNavTree('_fuse_s_d_k_8h_source.html','');});
 <div class="line"><a name="l02018"></a><span class="lineno"> 2018</span>&#160;</div>
 <div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;+(void) registerLevel:(<span class="keywordtype">int</span>)_level;</div>
 <div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160;</div>
-<div class="line"><a name="l02048"></a><span class="lineno"> 2048</span>&#160;+(void) registerCurrency:(<span class="keywordtype">int</span>)_currencyType Balance:(<span class="keywordtype">int</span>)_balance;</div>
-<div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;</div>
+<div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;+(BOOL) registerCurrency:(<span class="keywordtype">int</span>)_currencyType Balance:(<span class="keywordtype">int</span>)_balance;</div>
 <div class="line"><a name="l02050"></a><span class="lineno"> 2050</span>&#160;</div>
 <div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160;</div>
-<div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;<span class="preprocessor">#pragma mark Game Configuration Data</span></div>
-<div class="line"><a name="l02053"></a><span class="lineno"> 2053</span>&#160;</div>
-<div class="line"><a name="l02093"></a><span class="lineno"> 2093</span>&#160;+(NSString*) getGameConfigurationValue:(NSString*)_key;</div>
-<div class="line"><a name="l02094"></a><span class="lineno"> 2094</span>&#160;</div>
-<div class="line"><a name="l02147"></a><span class="lineno"> 2147</span>&#160;+(NSMutableDictionary*) getGameConfiguration;</div>
-<div class="line"><a name="l02148"></a><span class="lineno"> 2148</span>&#160;</div>
-<div class="line"><a name="l02149"></a><span class="lineno"> 2149</span>&#160;<span class="preprocessor">#pragma mark Public Methods</span></div>
-<div class="line"><a name="l02150"></a><span class="lineno"> 2150</span>&#160;</div>
-<div class="line"><a name="l02154"></a><span class="lineno"> 2154</span>&#160;+(instancetype) get;</div>
-<div class="line"><a name="l02155"></a><span class="lineno"> 2155</span>&#160;</div>
-<div class="line"><a name="l02156"></a><span class="lineno"> 2156</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l02157"></a><span class="lineno"> 2157</span>&#160;</div>
+<div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;</div>
+<div class="line"><a name="l02053"></a><span class="lineno"> 2053</span>&#160;<span class="preprocessor">#pragma mark Game Configuration Data</span></div>
+<div class="line"><a name="l02054"></a><span class="lineno"> 2054</span>&#160;</div>
+<div class="line"><a name="l02094"></a><span class="lineno"> 2094</span>&#160;+(NSString*) getGameConfigurationValue:(NSString*)_key;</div>
+<div class="line"><a name="l02095"></a><span class="lineno"> 2095</span>&#160;</div>
+<div class="line"><a name="l02148"></a><span class="lineno"> 2148</span>&#160;+(NSMutableDictionary*) getGameConfiguration;</div>
+<div class="line"><a name="l02149"></a><span class="lineno"> 2149</span>&#160;</div>
+<div class="line"><a name="l02150"></a><span class="lineno"> 2150</span>&#160;<span class="preprocessor">#pragma mark Public Methods</span></div>
+<div class="line"><a name="l02151"></a><span class="lineno"> 2151</span>&#160;</div>
+<div class="line"><a name="l02155"></a><span class="lineno"> 2155</span>&#160;+(instancetype) get;</div>
+<div class="line"><a name="l02156"></a><span class="lineno"> 2156</span>&#160;</div>
+<div class="line"><a name="l02157"></a><span class="lineno"> 2157</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l02158"></a><span class="lineno"> 2158</span>&#160;</div>
 <div class="ttc" id="protocol_fuse_delegate-p_html_a1513d7db889fcaa54d7248f441b74072"><div class="ttname"><a href="protocol_fuse_delegate-p.html#a1513d7db889fcaa54d7248f441b74072">-[FuseDelegate-p adFailedToDisplay]</a></div><div class="ttdeci">void adFailedToDisplay()</div><div class="ttdoc">Callback to inform no ad was displayed from showAdForZoneID:withOptions: call. </div></div>
 <div class="ttc" id="protocol_fuse_delegate-p_html"><div class="ttname"><a href="protocol_fuse_delegate-p.html">FuseDelegate-p</a></div><div class="ttdoc">This is the Fuse SDK delegate. </div><div class="ttdef"><b>Definition:</b> FuseSDK.h:27</div></div>
 <div class="ttc" id="interface_fuse_i_a_p_offer_object_html"><div class="ttname"><a href="interface_fuse_i_a_p_offer_object.html">FuseIAPOfferObject</a></div><div class="ttdef"><b>Definition:</b> FuseSDKDefinitions.h:97</div></div>
@@ -411,7 +411,7 @@ $(document).ready(function(){initNavTree('_fuse_s_d_k_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23fdee2f6995db16c755697cdf620cf4.html">Code</a></li><li class="navelem"><a class="el" href="dir_05f0b67eb736b5689b12c40dc101f04c.html">Classes</a></li><li class="navelem"><a class="el" href="dir_5c764bcd57232ece199869004f92300b.html">FuseSDK</a></li><li class="navelem"><b>FuseSDK.h</b></li>
-    <li class="footer">Generated on Fri May 29 2015 10:37:48 for FuseSDK (iOS) by
+    <li class="footer">Generated on Wed Jun 10 2015 14:27:55 for FuseSDK (iOS) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

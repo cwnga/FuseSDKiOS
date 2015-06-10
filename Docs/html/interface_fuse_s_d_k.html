@@ -335,9 +335,9 @@ Class Methods</h2></td></tr>
 <tr class="memitem:a37448397d10db8278e2e45d0448c4fa0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_fuse_s_d_k.html#a37448397d10db8278e2e45d0448c4fa0">registerLevel:</a></td></tr>
 <tr class="memdesc:a37448397d10db8278e2e45d0448c4fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a custom event with an integer value.  <a href="#a37448397d10db8278e2e45d0448c4fa0">More...</a><br /></td></tr>
 <tr class="separator:a37448397d10db8278e2e45d0448c4fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac07a77edd3b1eeddfe96dba096f15273"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_fuse_s_d_k.html#ac07a77edd3b1eeddfe96dba096f15273">registerCurrency:Balance:</a></td></tr>
-<tr class="memdesc:ac07a77edd3b1eeddfe96dba096f15273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a change in the current balances of the user's in-app currencies.  <a href="#ac07a77edd3b1eeddfe96dba096f15273">More...</a><br /></td></tr>
-<tr class="separator:ac07a77edd3b1eeddfe96dba096f15273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3321559b952097db1142e04c08da80f0"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_fuse_s_d_k.html#a3321559b952097db1142e04c08da80f0">registerCurrency:Balance:</a></td></tr>
+<tr class="memdesc:a3321559b952097db1142e04c08da80f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a change in the current balances of the user's in-app currencies.  <a href="#a3321559b952097db1142e04c08da80f0">More...</a><br /></td></tr>
+<tr class="separator:a3321559b952097db1142e04c08da80f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab29213306801eba35d922754a5efa1b0"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_fuse_s_d_k.html#ab29213306801eba35d922754a5efa1b0">getGameConfigurationValue:</a></td></tr>
 <tr class="memdesc:ab29213306801eba35d922754a5efa1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method retrieves server configuration values.  <a href="#ab29213306801eba35d922754a5efa1b0">More...</a><br /></td></tr>
 <tr class="separator:ab29213306801eba35d922754a5efa1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1708,12 +1708,12 @@ openFeintLogin: for more information on how to register a login with an OpenFein
 
 </div>
 </div>
-<a class="anchor" id="ac07a77edd3b1eeddfe96dba096f15273"></a>
+<a class="anchor" id="a3321559b952097db1142e04c08da80f0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">+ (void) registerCurrency: </td>
+          <td class="memname">+ (BOOL) registerCurrency: </td>
           <td></td>
           <td class="paramtype">(int)&#160;</td>
           <td class="paramname"><em>_currencyType</em></td>
@@ -1739,6 +1739,12 @@ openFeintLogin: for more information on how to register a login with an OpenFein
   <table class="params">
     <tr><td class="paramname">_currencyType</td><td>[int] Enter 1-4, representing up to four different in-app resources. These values can be set specific to the application. </td></tr>
     <tr><td class="paramname">_balance</td><td>[int] The updated balance of the user </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">[BOOL]</td><td>Returns YES if the _currencyType is within the valid range </td></tr>
   </table>
   </dd>
 </dl>
@@ -3031,7 +3037,7 @@ openFeintLogin: for more information on how to register a login with an OpenFein
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_fuse_s_d_k.html">FuseSDK</a></li>
-    <li class="footer">Generated on Fri May 29 2015 10:37:48 for FuseSDK (iOS) by
+    <li class="footer">Generated on Wed Jun 10 2015 14:27:55 for FuseSDK (iOS) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>
