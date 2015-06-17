@@ -27,7 +27,7 @@ Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an acc
 ### 2.1.4
 June 16th, 2015
 * Ad provider bug fixes
-* 
+
 ### 2.1.3
 June 11th, 2015
 * Ad provider bug fixes
