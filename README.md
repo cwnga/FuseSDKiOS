@@ -2,9 +2,9 @@
 
 ## Current Version
 
-Version: 2.1.4
+Version: 2.2.0
 
-Released: June 16th, 2015
+Released: August 7th, 2015
 
 ## To Download
 The easiest way to obtain the Fuse SDK is to click the "Download ZIP" button located in the right-hand navigation pane of the Github repository page.
@@ -23,6 +23,17 @@ Please review the [integration instructions](https://wiki.fusepowered.com/index.
 Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an account to get started!
 
 ## Release Notes
+
+### 2.2.0
+August 7th, 2015
+* New ad providers added
+* Added VAST support
+* Added rewarded video authentication 
+  * Added method +(void) setRewardedVideoUserID:(NSString *) _userID; to identify the user
+  * Added itemID in the FuseRewardedObject in the rewardedAdCompleteWithObject callback
+* Added startTime and endTime to FuseIAPOfferObject object in the IAPOfferAcceptedWithObject callback
+* Added currencyID, virtualGoodID, startTime and endTime to FuseVirtualGoodsOfferObject object in virtualGoodsOfferAcceptedWithObject callback
+* Bug fixes
 
 ### 2.1.4
 June 16th, 2015
