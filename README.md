@@ -30,8 +30,8 @@ August 10th, 2015
 * New ad providers added
 * Added VAST support
 * Added rewarded video authentication
-  *Added method +(void) setRewardedVideoUserID:(NSString *) _userID; to identify the user
-  *Added itemID in the FuseRewardedObject in the rewardedAdCompleteWithObject callback
+  * Added method +(void) setRewardedVideoUserID:(NSString *) _userID; to identify the user
+  * Added itemID in the FuseRewardedObject in the rewardedAdCompleteWithObject callback
 * Added startTime and endTime to FuseIAPOfferObject object in the IAPOfferAcceptedWithObject callback
 * Added currencyID, virtualGoodID, startTime and endTime to FuseVirtualGoodsOfferObject object in virtualGoodsOfferAcceptedWithObject callback
 * Bug fixes
