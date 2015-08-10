@@ -2,9 +2,9 @@
 
 ## Current Version
 
-Version: 2.1.4 Core
+Version: 2.2.0 Core
 
-Released: July 8th, 2015
+Released: August 10th, 2015
 
 ## To Download
 The Fuse "Core" SDK version is a light-weight alternative to the standard Fuse SDK, and includes a pre-bundled version of AdRally optimized for serving video ads (both rewarded and non-rewarded). This SDK is useful for developers who want to keep the final binary size of their apps as small as possible.
@@ -24,6 +24,18 @@ Please review the [integration instructions](https://wiki.fusepowered.com/index.
 Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an account to get started!
 
 ## Release Notes
+
+### 2.2.0
+August 10th, 2015
+* New ad providers added
+* Added VAST support
+* Added rewarded video authentication
+  *Added method +(void) setRewardedVideoUserID:(NSString *) _userID; to identify the user
+  *Added itemID in the FuseRewardedObject in the rewardedAdCompleteWithObject callback
+* Added startTime and endTime to FuseIAPOfferObject object in the IAPOfferAcceptedWithObject callback
+* Added currencyID, virtualGoodID, startTime and endTime to FuseVirtualGoodsOfferObject object in virtualGoodsOfferAcceptedWithObject callback
+* Bug fixes
+
 
 ### 2.1.4
 June 16th, 2015
