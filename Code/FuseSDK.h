@@ -444,8 +444,8 @@
  * @brief Callback to inform no ad was displayed from showAdForZoneID:withOptions: call.
 
  
- @see FshowAdForZoneID:withOptions:
- @since Fuse SDK version 2.0.0
+ * @see FshowAdForZoneID:withOptions:
+ * @since Fuse SDK version 2.0.0
  */
 -(void) adFailedToDisplay;
 
@@ -455,17 +455,26 @@
     It is then the application's responsibility to present an age gate and continue with the click-through if appropriate
  
  * In Order to use this Delegate Call, The option kFuseSDKOptionKey_HandleAdURLs must be passed with the value @YES
- @since Fuse SDK version 2.1.0
+ * @since Fuse SDK version 2.1.0
  */
 
 -(void) handleAdClickWithURL:(NSURL*)_url;
+
+/*!
+* @brief Callback to inform ad Did show
+ 
+ * @see FuseSDK::showAdForZoneID:withOptions:
+ * @since Fuse SDK version 2.2.1
+*/
+-(void) adDidShow:(NSNumber *)_networkID mediaType:(NSNumber *)_mediaType;
+
 
 @required
 /*!
  * @brief Callback to indicates when control is being returned to the application
  
  * @details When an ad is being dismissed by the user and control is to be returned to the application, this method will be called.  Once called, the application can continue execution of the user flow or application.
- * @see FuseSDK::showAdWithDelegate: for more information on displaying an ad with a \<FuseDelegate\>
+ * @see FuseSDK::showAdForZoneID:withOptions: for more information on displaying an ad with a \<FuseDelegate\>
  * @since FuseSDK version 1.12
  */
 -(void) adWillClose;
