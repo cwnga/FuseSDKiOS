@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['updatefriendslistfromserver',['updateFriendsListFromServer',['../interface_fuse_s_d_k.html#a11a92658dca5be9d79ca19a66bafb91e',1,'FuseSDK']]],
-  ['userpushnotification_3amessage_3a',['userPushNotification:Message:',['../interface_fuse_s_d_k.html#a84916a862fe925004f0c2d3c2b16aa28',1,'FuseSDK']]],
-  ['utctimefromserver',['utcTimeFromServer',['../interface_fuse_s_d_k.html#a60de732b9ecb7bce2439517cc2ca1f71',1,'FuseSDK']]]
+  ['virtualgoodid',['virtualGoodID',['../interface_fuse_virtual_goods_offer_object.html#ad8734bced746bbf3996998eaa788121f',1,'FuseVirtualGoodsOfferObject']]],
+  ['virtualgoodsofferacceptedwithobject_3a',['virtualGoodsOfferAcceptedWithObject:',['../protocol_fuse_delegate-p.html#a9577824db67c469466bd720d0193273d',1,'FuseDelegate-p']]]
 ];

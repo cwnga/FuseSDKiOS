@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['itemname',['itemName',['../interface_fuse_i_a_p_offer_object.html#afc44eae0ea1010ef7b02515dfc156e68',1,'FuseIAPOfferObject']]]
+  ['currencyid',['currencyID',['../interface_fuse_virtual_goods_offer_object.html#a1fd418f96df073f01dee40a326293059',1,'FuseVirtualGoodsOfferObject']]]
 ];

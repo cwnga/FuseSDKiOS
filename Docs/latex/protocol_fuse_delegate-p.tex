@@ -58,12 +58,12 @@ Inheritance diagram for $<$Fuse\+Delegate$>$\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Callback to acknowledge an iap offer was accepted. \end{DoxyCompactList}\item 
 (void) -\/ \hyperlink{protocol_fuse_delegate-p_a9577824db67c469466bd720d0193273d}{virtual\+Goods\+Offer\+Accepted\+With\+Object\+:}
 \begin{DoxyCompactList}\small\item\em Callback to acknowledge an virtual goods offer was accepted. \end{DoxyCompactList}\item 
-(void) -\/ \hyperlink{protocol_fuse_delegate-p_a95df901f497b5a80383dd6eb2aa9c43d}{on\+Ad\+Clicked\+With\+Message\+:}
-\begin{DoxyCompactList}\small\item\em Callback to acknowledge an News Ad was clicked and the app should react to \+\_\+message. \end{DoxyCompactList}\item 
 (void) -\/ \hyperlink{protocol_fuse_delegate-p_a1513d7db889fcaa54d7248f441b74072}{ad\+Failed\+To\+Display}
 \begin{DoxyCompactList}\small\item\em Callback to inform no ad was displayed from show\+Ad\+For\+Zone\+I\+D\+:with\+Options\+: call. \end{DoxyCompactList}\item 
 (void) -\/ \hyperlink{protocol_fuse_delegate-p_a2d725902d1f6c4c19d3ce3b65d60052b}{handle\+Ad\+Click\+With\+U\+R\+L\+:}
 \begin{DoxyCompactList}\small\item\em If implemented, Ad\+Rally ads will pass this callback including the click-\/through U\+R\+L back to the application. It is then the application's responsibility to present an age gate and continue with the click-\/through if appropriate. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_fuse_delegate-p_a88bd02eb971260468ac6f6052bdda28f}{ad\+Did\+Show\+:media\+Type\+:}
+\begin{DoxyCompactList}\small\item\em Callback to inform ad Did show. \end{DoxyCompactList}\item 
 (void) -\/ \hyperlink{protocol_fuse_delegate-p_aafc293cd46be3bd70eeb60971b961a51}{ad\+Will\+Close}
 \begin{DoxyCompactList}\small\item\em Callback to indicates when control is being returned to the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -174,6 +174,24 @@ preload\+Ad\+For\+Zone\+I\+D for more information on how to invoke the process o
 \begin{DoxySince}{Since}
 Fuse S\+D\+K version 1.\+26 
 \end{DoxySince}
+\hypertarget{protocol_fuse_delegate-p_a88bd02eb971260468ac6f6052bdda28f}{}\index{Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}!ad\+Did\+Show\+:media\+Type\+:@{ad\+Did\+Show\+:media\+Type\+:}}
+\index{ad\+Did\+Show\+:media\+Type\+:@{ad\+Did\+Show\+:media\+Type\+:}!Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}}
+\subsubsection[{ad\+Did\+Show\+:media\+Type\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) ad\+Did\+Show\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Number $\ast$)}]{\+\_\+network\+I\+D}
+\item[{mediaType:(N\+S\+Number $\ast$)}]{\+\_\+media\+Type}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_fuse_delegate-p_a88bd02eb971260468ac6f6052bdda28f}
+
+
+Callback to inform ad Did show. 
+
+\begin{DoxySeeAlso}{See also}
+Fuse\+S\+D\+K\+::show\+Ad\+For\+Zone\+I\+D\+:with\+Options\+: 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+Fuse S\+D\+K version 2.\+2.\+1 
+\end{DoxySince}
 \hypertarget{protocol_fuse_delegate-p_a1513d7db889fcaa54d7248f441b74072}{}\index{Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}!ad\+Failed\+To\+Display@{ad\+Failed\+To\+Display}}
 \index{ad\+Failed\+To\+Display@{ad\+Failed\+To\+Display}!Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}}
 \subsubsection[{ad\+Failed\+To\+Display}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) ad\+Failed\+To\+Display 
@@ -203,7 +221,7 @@ Fuse S\+D\+K version 2.\+0.\+0
 Callback to indicates when control is being returned to the application. 
 
 When an ad is being dismissed by the user and control is to be returned to the application, this method will be called. Once called, the application can continue execution of the user flow or application. \begin{DoxySeeAlso}{See also}
-Fuse\+S\+D\+K\+::show\+Ad\+With\+Delegate\+: for more information on displaying an ad with a $<$\hyperlink{protocol_fuse_delegate-p}{Fuse\+Delegate}$>$ 
+Fuse\+S\+D\+K\+::show\+Ad\+For\+Zone\+I\+D\+:with\+Options\+: for more information on displaying an ad with a $<$\hyperlink{protocol_fuse_delegate-p}{Fuse\+Delegate}$>$ 
 \end{DoxySeeAlso}
 \begin{DoxySince}{Since}
 \hyperlink{interface_fuse_s_d_k}{Fuse\+S\+D\+K} version 1.\+12 
@@ -621,38 +639,6 @@ To handle any possible action as a result of an in-\/game notification being dis
 \begin{DoxySeeAlso}{See also}
 \hyperlink{interface_fuse_s_d_k_a279e4cb8e95a3e78197761156a7de50d}{+ display\+Notifications (\+Fuse\+S\+D\+K)} for more information on displaying in-\/game notifications 
 \end{DoxySeeAlso}
-\hypertarget{protocol_fuse_delegate-p_a95df901f497b5a80383dd6eb2aa9c43d}{}\index{Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}!on\+Ad\+Clicked\+With\+Message\+:@{on\+Ad\+Clicked\+With\+Message\+:}}
-\index{on\+Ad\+Clicked\+With\+Message\+:@{on\+Ad\+Clicked\+With\+Message\+:}!Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}}
-\subsubsection[{on\+Ad\+Clicked\+With\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) on\+Ad\+Clicked\+With\+Message\+: 
-\begin{DoxyParamCaption}
-\item[{(N\+S\+String $\ast$)}]{\+\_\+message}
-\end{DoxyParamCaption}
-\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_fuse_delegate-p_a95df901f497b5a80383dd6eb2aa9c43d}
-
-
-Callback to acknowledge an News Ad was clicked and the app should react to \+\_\+message. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em \+\_\+message} & Dashboard set token for the application to respond to. Ex. 'open\+Store'\\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyCode}
--(void) onAdClickedWithMessage:(NSString*) \_message
-\{
-   \textcolor{keywordflow}{if}([\_message isEqualToString:\textcolor{stringliteral}{@"openStore"}])
-   \{
-       [game OpenCoinStore];
-   \}
-
-\}
-\end{DoxyCode}
-
-
-\begin{DoxySince}{Since}
-Fuse S\+D\+K version 2.\+1.\+0 
-\end{DoxySince}
 \hypertarget{protocol_fuse_delegate-p_a74e3e8647db995888bdf94c64d5ad26b}{}\index{Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}!purchase\+Verification\+:\+Transaction\+I\+D\+:\+Original\+Transaction\+I\+D\+:@{purchase\+Verification\+:\+Transaction\+I\+D\+:\+Original\+Transaction\+I\+D\+:}}
 \index{purchase\+Verification\+:\+Transaction\+I\+D\+:\+Original\+Transaction\+I\+D\+:@{purchase\+Verification\+:\+Transaction\+I\+D\+:\+Original\+Transaction\+I\+D\+:}!Fuse\+Delegate-\/p@{Fuse\+Delegate-\/p}}
 \subsubsection[{purchase\+Verification\+:\+Transaction\+I\+D\+:\+Original\+Transaction\+I\+D\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) purchase\+Verification\+: 

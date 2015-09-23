@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['onadclickedwithmessage_3a',['onAdClickedWithMessage:',['../protocol_fuse_delegate-p.html#a95df901f497b5a80383dd6eb2aa9c43d',1,'FuseDelegate-p']]]
+  ['preloadadforzoneid_3a',['preloadAdForZoneID:',['../interface_fuse_s_d_k.html#a2e80d673366877a4bcfc6fe86031d526',1,'FuseSDK']]],
+  ['purchaseverification_3atransactionid_3aoriginaltransactionid_3a',['purchaseVerification:TransactionID:OriginalTransactionID:',['../protocol_fuse_delegate-p.html#a74e3e8647db995888bdf94c64d5ad26b',1,'FuseDelegate-p']]]
 ];

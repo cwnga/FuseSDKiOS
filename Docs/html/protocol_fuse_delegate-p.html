@@ -185,15 +185,15 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a9577824db67c469466bd720d0193273d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_fuse_delegate-p.html#a9577824db67c469466bd720d0193273d">virtualGoodsOfferAcceptedWithObject:</a></td></tr>
 <tr class="memdesc:a9577824db67c469466bd720d0193273d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to acknowledge an virtual goods offer was accepted.  <a href="#a9577824db67c469466bd720d0193273d">More...</a><br /></td></tr>
 <tr class="separator:a9577824db67c469466bd720d0193273d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95df901f497b5a80383dd6eb2aa9c43d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_fuse_delegate-p.html#a95df901f497b5a80383dd6eb2aa9c43d">onAdClickedWithMessage:</a></td></tr>
-<tr class="memdesc:a95df901f497b5a80383dd6eb2aa9c43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to acknowledge an News Ad was clicked and the app should react to _message.  <a href="#a95df901f497b5a80383dd6eb2aa9c43d">More...</a><br /></td></tr>
-<tr class="separator:a95df901f497b5a80383dd6eb2aa9c43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1513d7db889fcaa54d7248f441b74072"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_fuse_delegate-p.html#a1513d7db889fcaa54d7248f441b74072">adFailedToDisplay</a></td></tr>
 <tr class="memdesc:a1513d7db889fcaa54d7248f441b74072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to inform no ad was displayed from showAdForZoneID:withOptions: call.  <a href="#a1513d7db889fcaa54d7248f441b74072">More...</a><br /></td></tr>
 <tr class="separator:a1513d7db889fcaa54d7248f441b74072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d725902d1f6c4c19d3ce3b65d60052b"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_fuse_delegate-p.html#a2d725902d1f6c4c19d3ce3b65d60052b">handleAdClickWithURL:</a></td></tr>
 <tr class="memdesc:a2d725902d1f6c4c19d3ce3b65d60052b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If implemented, AdRally ads will pass this callback including the click-through URL back to the application. It is then the application's responsibility to present an age gate and continue with the click-through if appropriate.  <a href="#a2d725902d1f6c4c19d3ce3b65d60052b">More...</a><br /></td></tr>
 <tr class="separator:a2d725902d1f6c4c19d3ce3b65d60052b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88bd02eb971260468ac6f6052bdda28f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_fuse_delegate-p.html#a88bd02eb971260468ac6f6052bdda28f">adDidShow:mediaType:</a></td></tr>
+<tr class="memdesc:a88bd02eb971260468ac6f6052bdda28f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to inform ad Did show.  <a href="#a88bd02eb971260468ac6f6052bdda28f">More...</a><br /></td></tr>
+<tr class="separator:a88bd02eb971260468ac6f6052bdda28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafc293cd46be3bd70eeb60971b961a51"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_fuse_delegate-p.html#aafc293cd46be3bd70eeb60971b961a51">adWillClose</a></td></tr>
 <tr class="memdesc:aafc293cd46be3bd70eeb60971b961a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to indicates when control is being returned to the application.  <a href="#aafc293cd46be3bd70eeb60971b961a51">More...</a><br /></td></tr>
 <tr class="separator:aafc293cd46be3bd70eeb60971b961a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -358,6 +358,44 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a88bd02eb971260468ac6f6052bdda28f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) adDidShow: </td>
+          <td></td>
+          <td class="paramtype">(NSNumber *)&#160;</td>
+          <td class="paramname"><em>_networkID</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">mediaType:</td>
+          <td></td>
+          <td class="paramtype">(NSNumber *)&#160;</td>
+          <td class="paramname"><em>_mediaType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback to inform ad Did show. </p>
+<dl class="section see"><dt>See also</dt><dd>FuseSDK::showAdForZoneID:withOptions: </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Fuse SDK version 2.2.1 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a1513d7db889fcaa54d7248f441b74072"></a>
 <div class="memitem">
 <div class="memproto">
@@ -407,7 +445,7 @@ Instance Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Callback to indicates when control is being returned to the application. </p>
-<p>When an ad is being dismissed by the user and control is to be returned to the application, this method will be called. Once called, the application can continue execution of the user flow or application. </p><dl class="section see"><dt>See also</dt><dd>FuseSDK::showAdWithDelegate: for more information on displaying an ad with a &lt;<a class="el" href="protocol_fuse_delegate-p.html" title="This is the Fuse SDK delegate. ">FuseDelegate</a>&gt; </dd></dl>
+<p>When an ad is being dismissed by the user and control is to be returned to the application, this method will be called. Once called, the application can continue execution of the user flow or application. </p><dl class="section see"><dt>See also</dt><dd>FuseSDK::showAdForZoneID:withOptions: for more information on displaying an ad with a &lt;<a class="el" href="protocol_fuse_delegate-p.html" title="This is the Fuse SDK delegate. ">FuseDelegate</a>&gt; </dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="interface_fuse_s_d_k.html" title="This is the main Fuse SDK static class. ">FuseSDK</a> version 1.12 </dd></dl>
 
 </div>
@@ -888,7 +926,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_fuse_i_a_p_offer_object.html">FuseIAPOfferObject</a> in FuseSDKDefintions.h for more information </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_fuse_i_a_p_offer_object.html" title="Object Returned to the SDK when a IAP offer was Accepted,. ">FuseIAPOfferObject</a> in FuseSDKDefintions.h for more information </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>Fuse SDK version 2.0.0 </dd></dl>
 
 </div>
@@ -961,47 +999,6 @@ Instance Methods</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_fuse_s_d_k.html#a279e4cb8e95a3e78197761156a7de50d" title="This method is used to display in-game Fuse notifications. ">+ displayNotifications (FuseSDK)</a> for more information on displaying in-game notifications </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a95df901f497b5a80383dd6eb2aa9c43d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) onAdClickedWithMessage: </td>
-          <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>_message</em></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Callback to acknowledge an News Ad was clicked and the app should react to _message. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_message</td><td>Dashboard set token for the application to respond to. Ex. 'openStore'</td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="fragment"><div class="line">-(void) onAdClickedWithMessage:(NSString*) _message</div>
-<div class="line">{</div>
-<div class="line">   <span class="keywordflow">if</span>([_message isEqualToString:<span class="stringliteral">@&quot;openStore&quot;</span>])</div>
-<div class="line">   {</div>
-<div class="line">       [game OpenCoinStore];</div>
-<div class="line">   }</div>
-<div class="line"></div>
-<div class="line">}</div>
-</div><!-- fragment --><dl class="section since"><dt>Since</dt><dd>Fuse SDK version 2.1.0 </dd></dl>
 
 </div>
 </div>
@@ -1101,7 +1098,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_fuse_rewarded_object.html">FuseRewardedObject</a> in FuseSDKDefintions.h for more information </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_fuse_rewarded_object.html" title="Object Returned to the SDK when a rewarded Ad was completed,. ">FuseRewardedObject</a> in FuseSDKDefintions.h for more information </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>Fuse SDK version 2.0.0 </dd></dl>
 
 </div>
@@ -1222,7 +1219,7 @@ EFuseError for more information on all possible error values </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_fuse_virtual_goods_offer_object.html">FuseVirtualGoodsOfferObject</a> in FuseSDKDefintions.h for more information </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_fuse_virtual_goods_offer_object.html" title="Object Returned to the SDK when a Virtual Goods offer was Accepted,. ">FuseVirtualGoodsOfferObject</a> in FuseSDKDefintions.h for more information </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>Fuse SDK version 2.0.0 </dd></dl>
 
 </div>
@@ -1236,7 +1233,7 @@ EFuseError for more information on all possible error values </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="protocol_fuse_delegate-p.html">FuseDelegate</a></li>
-    <li class="footer">Generated on Fri Aug 7 2015 14:49:08 for FuseSDK (iOS) by
+    <li class="footer">Generated on Wed Sep 23 2015 09:32:24 for FuseSDK (iOS) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

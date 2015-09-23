@@ -141,289 +141,298 @@ $(document).ready(function(){initNavTree('_fuse_s_d_k_8h_source.html','');});
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;-(void) account:(NSString*)_account_id  loginError:(NSError*)_error;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;-(void) notificationAction:(NSString*)_action;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;-(void) <a class="code" href="protocol_fuse_delegate-p.html#ac493f7599268adadcc22e7c508b4ba61">notficationWillClose</a>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;-(void) <a class="code" href="protocol_fuse_delegate-p.html#a1da152418e0a5dc2c1b108f501c6e627">gameConfigurationReceived</a>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;-(void) friendAdded:(NSString*)_fuse_id Error:(NSError*)_error;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;-(void) friendRemoved:(NSString*)_fuse_id Error:(NSError*)_error;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;-(void) friendAccepted:(NSString*)_fuse_id Error:(NSError*)_error;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;-(void) friendRejected:(NSString*)_fuse_id Error:(NSError*)_error;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;-(void) friendsMigrated:(NSString*)_fuse_id Error:(NSError*)_error;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;-(void) friendsListUpdated:(NSDictionary*)_friendsList;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;-(void) friendsListError:(NSError*)_error;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;-(void) <a class="code" href="protocol_fuse_delegate-p.html#ac493f7599268adadcc22e7c508b4ba61">notficationWillClose</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;-(void) <a class="code" href="protocol_fuse_delegate-p.html#a1da152418e0a5dc2c1b108f501c6e627">gameConfigurationReceived</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;-(void) friendAdded:(NSString*)_fuse_id Error:(NSError*)_error;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;-(void) friendRemoved:(NSString*)_fuse_id Error:(NSError*)_error;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;-(void) friendAccepted:(NSString*)_fuse_id Error:(NSError*)_error;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;-(void) friendRejected:(NSString*)_fuse_id Error:(NSError*)_error;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;-(void) friendsMigrated:(NSString*)_fuse_id Error:(NSError*)_error;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;-(void) friendsListUpdated:(NSDictionary*)_friendsList;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;-(void) friendsListError:(NSError*)_error;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;-(void) purchaseVerification:(NSNumber*)_verified TransactionID:(NSString*)_tx_id OriginalTransactionID:(NSString*)_o_tx_id;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;-(void) adAvailabilityResponse:(NSNumber*)_available Error:(NSError*)_error;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;-(void) purchaseVerification:(NSNumber*)_verified TransactionID:(NSString*)_tx_id OriginalTransactionID:(NSString*)_o_tx_id;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;-(void) adAvailabilityResponse:(NSNumber*)_available Error:(NSError*)_error;</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;-(void) rewardedAdCompleteWithObject:(<a class="code" href="interface_fuse_rewarded_object.html">FuseRewardedObject</a>*) _reward;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;-(void) IAPOfferAcceptedWithObject:(<a class="code" href="interface_fuse_i_a_p_offer_object.html">FuseIAPOfferObject</a>*) _offer;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;-(void) virtualGoodsOfferAcceptedWithObject:(<a class="code" href="interface_fuse_virtual_goods_offer_object.html">FuseVirtualGoodsOfferObject</a>*) _offer;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;-(void) onAdClickedWithMessage:(NSString*) _message;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;-(void) rewardedAdCompleteWithObject:(<a class="code" href="interface_fuse_rewarded_object.html">FuseRewardedObject</a>*) _reward;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;-(void) IAPOfferAcceptedWithObject:(<a class="code" href="interface_fuse_i_a_p_offer_object.html">FuseIAPOfferObject</a>*) _offer;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;-(void) virtualGoodsOfferAcceptedWithObject:(<a class="code" href="interface_fuse_virtual_goods_offer_object.html">FuseVirtualGoodsOfferObject</a>*) _offer;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;-(void) <a class="code" href="protocol_fuse_delegate-p.html#a1513d7db889fcaa54d7248f441b74072">adFailedToDisplay</a>;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;-(void) handleAdClickWithURL:(NSURL*)_url;</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;-(void) <a class="code" href="protocol_fuse_delegate-p.html#a1513d7db889fcaa54d7248f441b74072">adFailedToDisplay</a>;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;-(void) adDidShow:(NSNumber *)_networkID mediaType:(NSNumber *)_mediaType;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;-(void) handleAdClickWithURL:(NSURL*)_url;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="keyword">@required</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;-(void) <a class="code" href="protocol_fuse_delegate-p.html#aafc293cd46be3bd70eeb60971b961a51">adWillClose</a>;</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="keyword">@required</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;-(void) <a class="code" href="protocol_fuse_delegate-p.html#aafc293cd46be3bd70eeb60971b961a51">adWillClose</a>;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_fuse_s_d_k.html">FuseSDK</a> : NSObject</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;{</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    NSObject&lt;FuseDelegate&gt;* delegate;</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;}</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;<span class="preprocessor">#pragma mark SDK Management</span></div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;+(void) startSession:(NSString *)_app_id delegate:(NSObject&lt;<a class="code" href="protocol_fuse_delegate-p.html">FuseDelegate</a>&gt;*)_delegate withOptions:(NSDictionary*)_options;</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;+(void) setPlatform:(NSString *)_game_Platform;</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_fuse_s_d_k.html">FuseSDK</a> : NSObject</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;{</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    NSObject&lt;FuseDelegate&gt;* delegate;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;}</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="preprocessor">#pragma mark SDK Management</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;+(void) startSession:(NSString *)_app_id delegate:(NSObject&lt;<a class="code" href="protocol_fuse_delegate-p.html">FuseDelegate</a>&gt;*)_delegate withOptions:(NSDictionary*)_options;</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;+(void) setPlatform:(NSString *)_game_Platform;</div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;+(void) removeDelegate;</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;+(void) removeDelegate;</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;+(void) setDelegate:(NSObject&lt;<a class="code" href="protocol_fuse_delegate-p.html">FuseDelegate</a>&gt;*)_delegate;</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;+(void) setDelegate:(NSObject&lt;<a class="code" href="protocol_fuse_delegate-p.html">FuseDelegate</a>&gt;*)_delegate;</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="preprocessor">#pragma mark Application Hooks</span></div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;+(void) registerForPushToken;</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;+(void) registerForPushToken:(NSSet *)_categories;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;+(void) applicationdidRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;+(void) applicationdidFailToRegisterForRemoteNotificationsWithError:(NSError *)error;</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;+(void) applicationdidReceiveRemoteNotification:(NSDictionary *)userInfo Application:(UIApplication *)application;</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;+(void) respondToApplicationLaunchOptions:(NSDictionary *)launchOptions Application:(UIApplication *)application;</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;<span class="preprocessor">#pragma mark Analytic Event methods</span></div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;+(int) registerEvent:(NSString *)_message withDict:(NSDictionary*)_dict __attribute__((deprecated));</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;+(int) registerEvent:(NSString*)_name ParameterName:(NSString*)_param_name ParameterValue:(NSString*)_param_value Variables:(NSDictionary*)_variables __attribute__((deprecated));</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;+(int) registerEvent:(NSString*)_name ParameterName:(NSString*)_param_name ParameterValue:(NSString*)_param_value VariableName:(NSString*)_variable_name VariableValue:(NSNumber*)_variable_value __attribute__((deprecated));</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="preprocessor">#pragma mark Application Hooks</span></div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;+(void) registerForPushToken;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;+(void) registerForPushToken:(NSSet *)_categories;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;+(void) applicationdidRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;+(void) applicationdidFailToRegisterForRemoteNotificationsWithError:(NSError *)error;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;+(void) applicationdidReceiveRemoteNotification:(NSDictionary *)userInfo Application:(UIApplication *)application;</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;+(void) respondToApplicationLaunchOptions:(NSDictionary *)launchOptions Application:(UIApplication *)application;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;<span class="preprocessor">#pragma mark Analytic Event methods</span></div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;+(int) registerEvent:(NSString *)_message withDict:(NSDictionary*)_dict __attribute__((deprecated));</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;+(int) registerEvent:(NSString*)_name ParameterName:(NSString*)_param_name ParameterValue:(NSString*)_param_value Variables:(NSDictionary*)_variables __attribute__((deprecated));</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;+(int) registerEvent:(NSString*)_name ParameterName:(NSString*)_param_name ParameterValue:(NSString*)_param_value VariableName:(NSString*)_variable_name VariableValue:(NSNumber*)_variable_value __attribute__((deprecated));</div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;<span class="preprocessor">#pragma mark Game Crash Registration</span></div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;+(void) registerCrash:(NSException *)_exception;</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;<span class="preprocessor">#pragma mark Game Crash Registration</span></div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;+(void) registerCrash:(NSException *)_exception;</div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;</div>
 <div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;<span class="preprocessor">#pragma mark In-App Purchase Logging</span></div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;+(void) registerInAppPurchaseList:(SKProductsResponse *)_response;</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;+(void) registerInAppPurchase:(SKPaymentTransaction *)_transaction;</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;+(void) registerInAppPurchase:(NSData*)_receipt_data TxState:(NSInteger)_tx_state Price:(NSString*)_price Currency:(NSString*)_currency ProductID:(NSString*)_product_id __attribute__((deprecated));</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;+(void) registerInAppPurchase:(NSData*)_receipt_data TxState:(NSInteger)_tx_state Price:(NSString*)_price Currency:(NSString*)_currency ProductID:(NSString*)_product_id TransactionID:(NSString*)_tx_id;</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;<span class="preprocessor">#pragma mark In-App Purchase Logging</span></div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;+(void) registerInAppPurchaseList:(SKProductsResponse *)_response;</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;+(void) registerInAppPurchase:(SKPaymentTransaction *)_transaction;</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;+(void) registerInAppPurchase:(NSData*)_receipt_data TxState:(NSInteger)_tx_state Price:(NSString*)_price Currency:(NSString*)_currency ProductID:(NSString*)_product_id __attribute__((deprecated));</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;+(void) registerInAppPurchase:(NSData*)_receipt_data TxState:(NSInteger)_tx_state Price:(NSString*)_price Currency:(NSString*)_currency ProductID:(NSString*)_product_id TransactionID:(NSString*)_tx_id;</div>
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;+(void) registerVirtualGoodsPurchase:(<span class="keywordtype">int</span>)_virtualGoodsID Amount:(<span class="keywordtype">int</span>)_purchaseAmount CurrencyID:(<span class="keywordtype">int</span>)_currencyID;</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;+(void) registerVirtualGoodsPurchase:(<span class="keywordtype">int</span>)_virtualGoodsID Amount:(<span class="keywordtype">int</span>)_purchaseAmount CurrencyID:(<span class="keywordtype">int</span>)_currencyID;</div>
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;</div>
 <div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;<span class="preprocessor">#pragma mark Interstitial Ads</span></div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;<span class="comment"> </span></div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;<span class="comment"> * @brief This method sets the user ID string for rewarded video server verification</span></div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;<span class="comment"> * @details To allow server side verificiation. A user id registered with this function is passed to the server when a rewarded video has been completed. The server then transmits faithfully this id </span></div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;<span class="comment">    to the 3rd Party server registered on the FusePowered Dashboard. The value is only cached for the duration of the session, and can be changed at any time.</span></div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;<span class="comment"> </span></div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;<span class="comment"> @code</span></div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;<span class="comment"> [FuseSDK setRewardedVideoUserID:@&quot;bobSmith1994&quot;];</span></div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;<span class="comment"> </span></div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;+(void) setRewardedVideoUserID:(NSString *) _userID;</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;<span class="preprocessor">#pragma mark Interstitial Ads</span></div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;<span class="comment"> </span></div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;<span class="comment"> * @brief This method sets the user ID string for rewarded video server verification</span></div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;<span class="comment"> * @details To allow server side verificiation. A user id registered with this function is passed to the server when a rewarded video has been completed. The server then transmits faithfully this id </span></div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;<span class="comment">    to the 3rd Party server registered on the FusePowered Dashboard. The value is only cached for the duration of the session, and can be changed at any time.</span></div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;<span class="comment"> </span></div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;<span class="comment"> @code</span></div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;<span class="comment"> [FuseSDK setRewardedVideoUserID:@&quot;bobSmith1994&quot;];</span></div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;<span class="comment"> </span></div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;+(void) setRewardedVideoUserID:(NSString *) _userID;</div>
 <div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;+(BOOL) isAdAvailableForZoneID:(NSString*)_zoneID;</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;+(BOOL) isAdAvailableForZoneID:(NSString*)_zoneID;</div>
 <div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;+(void) showAdForZoneID:(NSString*)_zoneID options:(NSDictionary*) _options;</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;+(void) preloadAdForZoneID:(NSString*)_adZone;</div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;</div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;<span class="preprocessor">#pragma mark AdZone Queries</span></div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;+(<a class="code" href="interface_fuse_rewarded_object.html">FuseRewardedObject</a>*) getRewardedInfoForZoneID:(NSString*) _zoneID;</div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;</div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;</div>
-<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;+(BOOL) zoneHasRewarded:(NSString*) _zoneID;</div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;</div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;+(BOOL) zoneHasIAPOffer:(NSString*) _zoneID;</div>
-<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;</div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;+(BOOL) zoneHasVirtualGoodsOffer:(NSString*) _zoneID;</div>
-<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;</div>
-<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;-(NSArray*) GetAdZoneList;</div>
-<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;</div>
-<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;</div>
-<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;<span class="preprocessor">#pragma mark Notifications</span></div>
-<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;</div>
-<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;+(void) displayNotifications;</div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;</div>
-<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;+(BOOL) isNotificationAvailable;</div>
-<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;</div>
-<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;<span class="preprocessor">#pragma mark More Games </span></div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;+(void) showAdForZoneID:(NSString*)_zoneID options:(NSDictionary*) _options;</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;+(void) preloadAdForZoneID:(NSString*)_adZone;</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;<span class="preprocessor">#pragma mark AdZone Queries</span></div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;+(<a class="code" href="interface_fuse_rewarded_object.html">FuseRewardedObject</a>*) getRewardedInfoForZoneID:(NSString*) _zoneID;</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;</div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;+(<a class="code" href="interface_fuse_i_a_p_offer_object.html">FuseIAPOfferObject</a>*) getIAPOfferInfoForZoneID:(NSString*) _zoneID;</div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;+(<a class="code" href="interface_fuse_virtual_goods_offer_object.html">FuseVirtualGoodsOfferObject</a>*) getVirtualGoodsOfferInfoForZoneID:(NSString*) _zoneID;</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;</div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;+(BOOL) zoneHasRewarded:(NSString*) _zoneID;</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;+(BOOL) zoneHasIAPOffer:(NSString*) _zoneID;</div>
 <div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;+(void) displayMoreGames;</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;<span class="preprocessor">#pragma mark Gender</span></div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;</div>
-<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;+(void) registerGender:(<span class="keywordtype">int</span>)_gender;</div>
-<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;</div>
-<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;<span class="preprocessor">#pragma mark Age</span></div>
-<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;</div>
-<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;+(void) registerAge:(<span class="keywordtype">int</span>)_age;</div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;</div>
-<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;+(void) registerBirthday:(<span class="keywordtype">int</span>)_year Month:(<span class="keywordtype">int</span>)_month Day:(<span class="keywordtype">int</span>)_day;</div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;</div>
-<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;<span class="preprocessor">#pragma mark Account Login methods</span></div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;</div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;+(NSString*) getFuseID;</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;+(BOOL) zoneHasVirtualGoodsOffer:(NSString*) _zoneID;</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;-(NSArray*) GetAdZoneList;</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;</div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;<span class="preprocessor">#pragma mark Notifications</span></div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;+(void) displayNotifications;</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;+(BOOL) isNotificationAvailable;</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;<span class="preprocessor">#pragma mark Gender</span></div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;</div>
+<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;+(void) registerGender:(<span class="keywordtype">int</span>)_gender;</div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;<span class="preprocessor">#pragma mark Age</span></div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;</div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;+(void) registerAge:(<span class="keywordtype">int</span>)_age;</div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;+(void) registerBirthday:(<span class="keywordtype">int</span>)_year Month:(<span class="keywordtype">int</span>)_month Day:(<span class="keywordtype">int</span>)_day;</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;<span class="preprocessor">#pragma mark Account Login methods</span></div>
 <div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;</div>
-<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;+(void) gameCenterLogin:(GKLocalPlayer*)_lp;</div>
-<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;</div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;+(void) facebookLogin:(NSString*)_facebook_id Name:(NSString*)_name withAccessToken:(NSString*)_accesstoken;</div>
-<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;</div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;+(void) facebookLogin:(NSString*)_facebook_id __attribute__((deprecated));</div>
-<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;</div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;+(void) facebookLogin:(NSString*)_facebook_id Name:(NSString*)_name Gender:(<span class="keywordtype">int</span>)_gender withAccessToken:(NSString*)_accesstoken;</div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;+(void) twitterLogin:(NSString*)_twitter_id;</div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;</div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;+(void) twitterLogin:(NSString*)_twitter_id Alias:(NSString*)_alias;</div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;</div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;</div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;</div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;+(void) fuseLogin:(NSString*)_fuse_id Alias:(NSString*)_alias;</div>
-<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;+(void) emailLogin:(NSString*)_email Alias:(NSString*)_alias;</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;</div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;+(void) deviceLogin:(NSString*)_alias;</div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;</div>
-<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;+(void) googlePlayLogin:(NSString*)_alias AccessToken:(NSString*)_token;</div>
-<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;</div>
-<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;+(NSString*) getOriginalAccountID;</div>
-<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;</div>
-<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;+(int) getOriginalAccountType;</div>
-<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;</div>
-<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;+(NSString*) getOriginalAccountAlias;</div>
-<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;</div>
-<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;<span class="preprocessor">#pragma mark Miscellaneous</span></div>
-<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;</div>
-<div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160;+(int) gamesPlayed;</div>
-<div class="line"><a name="l01582"></a><span class="lineno"> 1582</span>&#160;</div>
-<div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;+(NSString*) libraryVersion;</div>
-<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;</div>
-<div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;</div>
-<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;+(BOOL) connected;</div>
-<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;</div>
-<div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;+(void) utcTimeFromServer;</div>
-<div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160;</div>
-<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;+(BOOL) notReadyToTerminate;</div>
-<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160;</div>
-<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;<span class="preprocessor">#pragma mark Data Opt In/Out</span></div>
-<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;</div>
-<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;+(void) disableData;</div>
-<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;</div>
-<div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;+(void) enableData;</div>
-<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;</div>
-<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;+(BOOL) dataEnabled;</div>
-<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;</div>
-<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;</div>
-<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;</div>
-<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;<span class="preprocessor">#pragma mark Friends List Actions</span></div>
-<div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;</div>
-<div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160;+(void) updateFriendsListFromServer;</div>
-<div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160; </div>
-<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160;+(NSMutableDictionary*) getFriendsList;</div>
-<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;</div>
-<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;+(void) addFriend:(NSString*)_fuse_id;</div>
-<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;</div>
-<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;+(void) removeFriend:(NSString*)_fuse_id;</div>
-<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;</div>
-<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;+(void) acceptFriend:(NSString*)_fuse_id;</div>
-<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;</div>
-<div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;+(void) rejectFriend:(NSString*)_fuse_id;</div>
-<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;</div>
-<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;+(void) migrateFriends:(NSString*)_fuse_id;</div>
-<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;<span class="preprocessor">#pragma mark User-to-User Push Notifications</span></div>
-<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;</div>
-<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;+(void) userPushNotification:(NSString*)_fuse_id Message:(NSString*)_message;</div>
-<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;</div>
-<div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;+(void) friendsPushNotification:(NSString*)_message;</div>
-<div class="line"><a name="l01974"></a><span class="lineno"> 1974</span>&#160;</div>
-<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;<span class="preprocessor">#pragma mark Specific Event Registration</span></div>
-<div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;</div>
-<div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;+(void) registerParentalConsent:(BOOL)_consent;</div>
-<div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;</div>
-<div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;+(BOOL) registerCustomEvent:(<span class="keywordtype">int</span>)_eventNumber withInt:(<span class="keywordtype">int</span>)_value;</div>
-<div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;</div>
-<div class="line"><a name="l02028"></a><span class="lineno"> 2028</span>&#160;+(BOOL) registerCustomEvent:(<span class="keywordtype">int</span>)_eventNumber withString:(NSString*)_value;</div>
-<div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;</div>
-<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;</div>
-<div class="line"><a name="l02044"></a><span class="lineno"> 2044</span>&#160;+(void) registerLevel:(<span class="keywordtype">int</span>)_level;</div>
-<div class="line"><a name="l02045"></a><span class="lineno"> 2045</span>&#160;</div>
-<div class="line"><a name="l02061"></a><span class="lineno"> 2061</span>&#160;+(BOOL) registerCurrency:(<span class="keywordtype">int</span>)_currencyType Balance:(<span class="keywordtype">int</span>)_balance;</div>
-<div class="line"><a name="l02062"></a><span class="lineno"> 2062</span>&#160;</div>
-<div class="line"><a name="l02063"></a><span class="lineno"> 2063</span>&#160;</div>
-<div class="line"><a name="l02064"></a><span class="lineno"> 2064</span>&#160;</div>
-<div class="line"><a name="l02065"></a><span class="lineno"> 2065</span>&#160;<span class="preprocessor">#pragma mark Game Configuration Data</span></div>
-<div class="line"><a name="l02066"></a><span class="lineno"> 2066</span>&#160;</div>
-<div class="line"><a name="l02106"></a><span class="lineno"> 2106</span>&#160;+(NSString*) getGameConfigurationValue:(NSString*)_key;</div>
-<div class="line"><a name="l02107"></a><span class="lineno"> 2107</span>&#160;</div>
-<div class="line"><a name="l02160"></a><span class="lineno"> 2160</span>&#160;+(NSMutableDictionary*) getGameConfiguration;</div>
-<div class="line"><a name="l02161"></a><span class="lineno"> 2161</span>&#160;</div>
-<div class="line"><a name="l02162"></a><span class="lineno"> 2162</span>&#160;<span class="preprocessor">#pragma mark Public Methods</span></div>
-<div class="line"><a name="l02163"></a><span class="lineno"> 2163</span>&#160;</div>
-<div class="line"><a name="l02167"></a><span class="lineno"> 2167</span>&#160;+(instancetype) get;</div>
-<div class="line"><a name="l02168"></a><span class="lineno"> 2168</span>&#160;</div>
-<div class="line"><a name="l02169"></a><span class="lineno"> 2169</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l02170"></a><span class="lineno"> 2170</span>&#160;</div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;+(NSString*) getFuseID;</div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;+(void) gameCenterLogin:(GKLocalPlayer*)_lp;</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;</div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;+(void) facebookLogin:(NSString*)_facebook_id Name:(NSString*)_name withAccessToken:(NSString*)_accesstoken;</div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;</div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;+(void) facebookLogin:(NSString*)_facebook_id __attribute__((deprecated));</div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;</div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;+(void) facebookLogin:(NSString*)_facebook_id Name:(NSString*)_name Gender:(<span class="keywordtype">int</span>)_gender withAccessToken:(NSString*)_accesstoken;</div>
+<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;+(void) twitterLogin:(NSString*)_twitter_id;</div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;+(void) twitterLogin:(NSString*)_twitter_id Alias:(NSString*)_alias;</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;</div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;+(void) fuseLogin:(NSString*)_fuse_id Alias:(NSString*)_alias;</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;+(void) emailLogin:(NSString*)_email Alias:(NSString*)_alias;</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;</div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;+(void) deviceLogin:(NSString*)_alias;</div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;</div>
+<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;+(void) googlePlayLogin:(NSString*)_alias AccessToken:(NSString*)_token;</div>
+<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;</div>
+<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;+(NSString*) getOriginalAccountID;</div>
+<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;</div>
+<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;+(int) getOriginalAccountType;</div>
+<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;</div>
+<div class="line"><a name="l01586"></a><span class="lineno"> 1586</span>&#160;+(NSString*) getOriginalAccountAlias;</div>
+<div class="line"><a name="l01587"></a><span class="lineno"> 1587</span>&#160;</div>
+<div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;<span class="preprocessor">#pragma mark Miscellaneous</span></div>
+<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;</div>
+<div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;+(int) gamesPlayed;</div>
+<div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;</div>
+<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;+(NSString*) libraryVersion;</div>
+<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;</div>
+<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;</div>
+<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;+(BOOL) connected;</div>
+<div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;</div>
+<div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;+(void) utcTimeFromServer;</div>
+<div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;</div>
+<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;+(BOOL) notReadyToTerminate;</div>
+<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;</div>
+<div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;<span class="preprocessor">#pragma mark Data Opt In/Out</span></div>
+<div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;</div>
+<div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;+(void) disableData;</div>
+<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;</div>
+<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;+(void) enableData;</div>
+<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;</div>
+<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;+(BOOL) dataEnabled;</div>
+<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;</div>
+<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;</div>
+<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;</div>
+<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;<span class="preprocessor">#pragma mark Friends List Actions</span></div>
+<div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;</div>
+<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;+(void) updateFriendsListFromServer;</div>
+<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160; </div>
+<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;+(NSMutableDictionary*) getFriendsList;</div>
+<div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;</div>
+<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;+(void) addFriend:(NSString*)_fuse_id;</div>
+<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;</div>
+<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;+(void) removeFriend:(NSString*)_fuse_id;</div>
+<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;</div>
+<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;+(void) acceptFriend:(NSString*)_fuse_id;</div>
+<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;</div>
+<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;+(void) rejectFriend:(NSString*)_fuse_id;</div>
+<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;</div>
+<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;+(void) migrateFriends:(NSString*)_fuse_id;</div>
+<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;</div>
+<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;<span class="preprocessor">#pragma mark User-to-User Push Notifications</span></div>
+<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;</div>
+<div class="line"><a name="l01977"></a><span class="lineno"> 1977</span>&#160;+(void) userPushNotification:(NSString*)_fuse_id Message:(NSString*)_message;</div>
+<div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;</div>
+<div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160;+(void) friendsPushNotification:(NSString*)_message;</div>
+<div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160;</div>
+<div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;<span class="preprocessor">#pragma mark Specific Event Registration</span></div>
+<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;</div>
+<div class="line"><a name="l02012"></a><span class="lineno"> 2012</span>&#160;+(void) registerParentalConsent:(BOOL)_consent;</div>
+<div class="line"><a name="l02013"></a><span class="lineno"> 2013</span>&#160;</div>
+<div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;+(BOOL) registerCustomEvent:(<span class="keywordtype">int</span>)_eventNumber withInt:(<span class="keywordtype">int</span>)_value;</div>
+<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;</div>
+<div class="line"><a name="l02050"></a><span class="lineno"> 2050</span>&#160;+(BOOL) registerCustomEvent:(<span class="keywordtype">int</span>)_eventNumber withString:(NSString*)_value;</div>
+<div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160;</div>
+<div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;</div>
+<div class="line"><a name="l02066"></a><span class="lineno"> 2066</span>&#160;+(void) registerLevel:(<span class="keywordtype">int</span>)_level;</div>
+<div class="line"><a name="l02067"></a><span class="lineno"> 2067</span>&#160;</div>
+<div class="line"><a name="l02083"></a><span class="lineno"> 2083</span>&#160;+(BOOL) registerCurrency:(<span class="keywordtype">int</span>)_currencyType Balance:(<span class="keywordtype">int</span>)_balance;</div>
+<div class="line"><a name="l02084"></a><span class="lineno"> 2084</span>&#160;</div>
+<div class="line"><a name="l02085"></a><span class="lineno"> 2085</span>&#160;</div>
+<div class="line"><a name="l02086"></a><span class="lineno"> 2086</span>&#160;</div>
+<div class="line"><a name="l02087"></a><span class="lineno"> 2087</span>&#160;<span class="preprocessor">#pragma mark Game Configuration Data</span></div>
+<div class="line"><a name="l02088"></a><span class="lineno"> 2088</span>&#160;</div>
+<div class="line"><a name="l02128"></a><span class="lineno"> 2128</span>&#160;+(NSString*) getGameConfigurationValue:(NSString*)_key;</div>
+<div class="line"><a name="l02129"></a><span class="lineno"> 2129</span>&#160;</div>
+<div class="line"><a name="l02182"></a><span class="lineno"> 2182</span>&#160;+(NSMutableDictionary*) getGameConfiguration;</div>
+<div class="line"><a name="l02183"></a><span class="lineno"> 2183</span>&#160;</div>
+<div class="line"><a name="l02184"></a><span class="lineno"> 2184</span>&#160;<span class="preprocessor">#pragma mark Public Methods</span></div>
+<div class="line"><a name="l02185"></a><span class="lineno"> 2185</span>&#160;</div>
+<div class="line"><a name="l02189"></a><span class="lineno"> 2189</span>&#160;+(instancetype) get;</div>
+<div class="line"><a name="l02190"></a><span class="lineno"> 2190</span>&#160;</div>
+<div class="line"><a name="l02191"></a><span class="lineno"> 2191</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l02192"></a><span class="lineno"> 2192</span>&#160;</div>
 <div class="ttc" id="protocol_fuse_delegate-p_html_a1513d7db889fcaa54d7248f441b74072"><div class="ttname"><a href="protocol_fuse_delegate-p.html#a1513d7db889fcaa54d7248f441b74072">-[FuseDelegate-p adFailedToDisplay]</a></div><div class="ttdeci">void adFailedToDisplay()</div><div class="ttdoc">Callback to inform no ad was displayed from showAdForZoneID:withOptions: call. </div></div>
 <div class="ttc" id="protocol_fuse_delegate-p_html"><div class="ttname"><a href="protocol_fuse_delegate-p.html">FuseDelegate-p</a></div><div class="ttdoc">This is the Fuse SDK delegate. </div><div class="ttdef"><b>Definition:</b> FuseSDK.h:27</div></div>
-<div class="ttc" id="interface_fuse_i_a_p_offer_object_html"><div class="ttname"><a href="interface_fuse_i_a_p_offer_object.html">FuseIAPOfferObject</a></div><div class="ttdef"><b>Definition:</b> FuseSDKDefinitions.h:99</div></div>
+<div class="ttc" id="interface_fuse_i_a_p_offer_object_html"><div class="ttname"><a href="interface_fuse_i_a_p_offer_object.html">FuseIAPOfferObject</a></div><div class="ttdoc">Object Returned to the SDK when a IAP offer was Accepted,. </div><div class="ttdef"><b>Definition:</b> FuseSDKDefinitions.h:93</div></div>
 <div class="ttc" id="protocol_fuse_delegate-p_html_a4278f68e73dc20a7a24b331959a1872c"><div class="ttname"><a href="protocol_fuse_delegate-p.html#a4278f68e73dc20a7a24b331959a1872c">-[FuseDelegate-p sessionStartReceived]</a></div><div class="ttdeci">void sessionStartReceived()</div><div class="ttdoc">This method indicates when the server has acknowledged that a session has been established by the cli...</div></div>
 <div class="ttc" id="protocol_fuse_delegate-p_html_aafc293cd46be3bd70eeb60971b961a51"><div class="ttname"><a href="protocol_fuse_delegate-p.html#aafc293cd46be3bd70eeb60971b961a51">-[FuseDelegate-p adWillClose]</a></div><div class="ttdeci">void adWillClose()</div><div class="ttdoc">Callback to indicates when control is being returned to the application. </div></div>
 <div class="ttc" id="protocol_fuse_delegate-p_html_a1da152418e0a5dc2c1b108f501c6e627"><div class="ttname"><a href="protocol_fuse_delegate-p.html#a1da152418e0a5dc2c1b108f501c6e627">-[FuseDelegate-p gameConfigurationReceived]</a></div><div class="ttdeci">void gameConfigurationReceived()</div><div class="ttdoc">This method indicates that the game configuration values have been received by the client...</div></div>
-<div class="ttc" id="interface_fuse_s_d_k_html"><div class="ttname"><a href="interface_fuse_s_d_k.html">FuseSDK</a></div><div class="ttdoc">This is the main Fuse SDK static class. </div><div class="ttdef"><b>Definition:</b> FuseSDK.h:483</div></div>
-<div class="ttc" id="interface_fuse_rewarded_object_html"><div class="ttname"><a href="interface_fuse_rewarded_object.html">FuseRewardedObject</a></div><div class="ttdef"><b>Definition:</b> FuseSDKDefinitions.h:86</div></div>
+<div class="ttc" id="interface_fuse_s_d_k_html"><div class="ttname"><a href="interface_fuse_s_d_k.html">FuseSDK</a></div><div class="ttdoc">This is the main Fuse SDK static class. </div><div class="ttdef"><b>Definition:</b> FuseSDK.h:473</div></div>
+<div class="ttc" id="interface_fuse_rewarded_object_html"><div class="ttname"><a href="interface_fuse_rewarded_object.html">FuseRewardedObject</a></div><div class="ttdoc">Object Returned to the SDK when a rewarded Ad was completed,. </div><div class="ttdef"><b>Definition:</b> FuseSDKDefinitions.h:78</div></div>
 <div class="ttc" id="protocol_fuse_delegate-p_html_ac493f7599268adadcc22e7c508b4ba61"><div class="ttname"><a href="protocol_fuse_delegate-p.html#ac493f7599268adadcc22e7c508b4ba61">-[FuseDelegate-p notficationWillClose]</a></div><div class="ttdeci">void notficationWillClose()</div><div class="ttdoc">This method indicates that a visible notification is being closed. </div></div>
-<div class="ttc" id="interface_fuse_virtual_goods_offer_object_html"><div class="ttname"><a href="interface_fuse_virtual_goods_offer_object.html">FuseVirtualGoodsOfferObject</a></div><div class="ttdef"><b>Definition:</b> FuseSDKDefinitions.h:115</div></div>
+<div class="ttc" id="interface_fuse_virtual_goods_offer_object_html"><div class="ttname"><a href="interface_fuse_virtual_goods_offer_object.html">FuseVirtualGoodsOfferObject</a></div><div class="ttdoc">Object Returned to the SDK when a Virtual Goods offer was Accepted,. </div><div class="ttdef"><b>Definition:</b> FuseSDKDefinitions.h:114</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23fdee2f6995db16c755697cdf620cf4.html">Code</a></li><li class="navelem"><a class="el" href="dir_05f0b67eb736b5689b12c40dc101f04c.html">Classes</a></li><li class="navelem"><a class="el" href="dir_5c764bcd57232ece199869004f92300b.html">FuseSDK</a></li><li class="navelem"><b>FuseSDK.h</b></li>
-    <li class="footer">Generated on Fri Aug 7 2015 14:49:08 for FuseSDK (iOS) by
+    <li class="footer">Generated on Wed Sep 23 2015 09:32:24 for FuseSDK (iOS) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

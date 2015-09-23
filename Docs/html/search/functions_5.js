@@ -9,9 +9,11 @@ var searchData=
   ['getfuseid',['getFuseID',['../interface_fuse_s_d_k.html#ab483c2a3f4439aad8e19200cf24ff731',1,'FuseSDK']]],
   ['getgameconfiguration',['getGameConfiguration',['../interface_fuse_s_d_k.html#a0267e0bb12395c93cea9442f62dcc53e',1,'FuseSDK']]],
   ['getgameconfigurationvalue_3a',['getGameConfigurationValue:',['../interface_fuse_s_d_k.html#ab29213306801eba35d922754a5efa1b0',1,'FuseSDK']]],
+  ['getiapofferinfoforzoneid_3a',['getIAPOfferInfoForZoneID:',['../interface_fuse_s_d_k.html#a3314236b84929bbc6fb400ac72135691',1,'FuseSDK']]],
   ['getoriginalaccountalias',['getOriginalAccountAlias',['../interface_fuse_s_d_k.html#ab49bb189bd1ebaf871f24a7c4e4b5290',1,'FuseSDK']]],
   ['getoriginalaccountid',['getOriginalAccountID',['../interface_fuse_s_d_k.html#a49b43f13a0efee7d2af60197d0ae341c',1,'FuseSDK']]],
   ['getoriginalaccounttype',['getOriginalAccountType',['../interface_fuse_s_d_k.html#a0571f2d960109dc9bff59c6575bf2534',1,'FuseSDK']]],
   ['getrewardedinfoforzoneid_3a',['getRewardedInfoForZoneID:',['../interface_fuse_s_d_k.html#a89958c6b87beffac157ac028e9e29df1',1,'FuseSDK']]],
+  ['getvirtualgoodsofferinfoforzoneid_3a',['getVirtualGoodsOfferInfoForZoneID:',['../interface_fuse_s_d_k.html#a2988bfb2515b70af4aeafd4dea7ada57',1,'FuseSDK']]],
   ['googleplaylogin_3aaccesstoken_3a',['googlePlayLogin:AccessToken:',['../interface_fuse_s_d_k.html#a826545aa45a550cbc10cc98137ee5898',1,'FuseSDK']]]
 ];

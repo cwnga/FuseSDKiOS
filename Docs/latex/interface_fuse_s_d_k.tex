@@ -71,7 +71,11 @@ Inheritance diagram for Fuse\+S\+D\+K\+:\begin{figure}[H]
 (void) + \hyperlink{interface_fuse_s_d_k_a2e80d673366877a4bcfc6fe86031d526}{preload\+Ad\+For\+Zone\+I\+D\+:}
 \begin{DoxyCompactList}\small\item\em This method loads an ad and reports if it is available to be shown to the user for the specified ad zone. \end{DoxyCompactList}\item 
 (\hyperlink{interface_fuse_rewarded_object}{Fuse\+Rewarded\+Object} $\ast$) + \hyperlink{interface_fuse_s_d_k_a89958c6b87beffac157ac028e9e29df1}{get\+Rewarded\+Info\+For\+Zone\+I\+D\+:}
-\begin{DoxyCompactList}\small\item\em This Method returns the \hyperlink{interface_fuse_rewarded_object}{Fuse\+Rewarded\+Object} for a give zone\+I\+D, or nil if there is no rewards available. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This Method returns the \hyperlink{interface_fuse_rewarded_object}{Fuse\+Rewarded\+Object} for a given zone\+I\+D, or nil if there is no rewards available. \end{DoxyCompactList}\item 
+(\hyperlink{interface_fuse_i_a_p_offer_object}{Fuse\+I\+A\+P\+Offer\+Object} $\ast$) + \hyperlink{interface_fuse_s_d_k_a3314236b84929bbc6fb400ac72135691}{get\+I\+A\+P\+Offer\+Info\+For\+Zone\+I\+D\+:}
+\begin{DoxyCompactList}\small\item\em This Method returns the \hyperlink{interface_fuse_i_a_p_offer_object}{Fuse\+I\+A\+P\+Offer\+Object} for a given zone\+I\+D, or nil if there is no I\+A\+P offer available. \end{DoxyCompactList}\item 
+(\hyperlink{interface_fuse_virtual_goods_offer_object}{Fuse\+Virtual\+Goods\+Offer\+Object} $\ast$) + \hyperlink{interface_fuse_s_d_k_a2988bfb2515b70af4aeafd4dea7ada57}{get\+Virtual\+Goods\+Offer\+Info\+For\+Zone\+I\+D\+:}
+\begin{DoxyCompactList}\small\item\em This Method returns the \hyperlink{interface_fuse_rewarded_object}{Fuse\+Rewarded\+Object} for a give zone\+I\+D, or nil if there is Virtual Good offer available. \end{DoxyCompactList}\item 
 (B\+O\+O\+L) + \hyperlink{interface_fuse_s_d_k_ad98a95cc63498dee7256258206808056}{zone\+Has\+Rewarded\+:}
 \begin{DoxyCompactList}\small\item\em Use this method to query wether or not an ad zone has rewarded video content in it;. \end{DoxyCompactList}\item 
 (B\+O\+O\+L) + \hyperlink{interface_fuse_s_d_k_adb67f99bc2972de6774949fc2849f548}{zone\+Has\+I\+A\+P\+Offer\+:}
@@ -83,8 +87,6 @@ Inheritance diagram for Fuse\+S\+D\+K\+:\begin{figure}[H]
 \hypertarget{interface_fuse_s_d_k_a23c30bc15f208daf639ece250b8a5935}{}(B\+O\+O\+L) + \hyperlink{interface_fuse_s_d_k_a23c30bc15f208daf639ece250b8a5935}{is\+Notification\+Available}\label{interface_fuse_s_d_k_a23c30bc15f208daf639ece250b8a5935}
 
 \begin{DoxyCompactList}\small\item\em This method returns whether a Fuse notification is available to be viewed. \end{DoxyCompactList}\item 
-(void) + \hyperlink{interface_fuse_s_d_k_ac7c361dc8e2935cbd32cbdd6c5c8952b}{display\+More\+Games}
-\begin{DoxyCompactList}\small\item\em This method is use to display the \char`\"{}\+More Games\char`\"{} section. \end{DoxyCompactList}\item 
 (void) + \hyperlink{interface_fuse_s_d_k_a2b0c7be7abc4ec4ae6912f295d21e64c}{register\+Gender\+:}
 \begin{DoxyCompactList}\small\item\em This method registers a gender for the user. \end{DoxyCompactList}\item 
 (void) + \hyperlink{interface_fuse_s_d_k_a33903ca8d52be440186c4bbf1cbe510c}{register\+Age\+:}
@@ -488,43 +490,6 @@ While it is necessary to allow a user to opt in and out of data collection, the 
 \hyperlink{interface_fuse_s_d_k_a8c0d55b6f8fad28e9cb150271a82df2f}{+ enable\+Data} to understand how to enable collecting data 
 
 Download \href{https://www.fuseboxx.com/api/Settings.bundle.zip}{\tt https\+://www.\+fuseboxx.\+com/api/\+Settings.\+bundle.\+zip} to integrate the settings bundle and avoid having to implement this method 
-\end{DoxySeeAlso}
-\hypertarget{interface_fuse_s_d_k_ac7c361dc8e2935cbd32cbdd6c5c8952b}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!display\+More\+Games@{display\+More\+Games}}
-\index{display\+More\+Games@{display\+More\+Games}!Fuse\+S\+D\+K@{Fuse\+S\+D\+K}}
-\subsubsection[{display\+More\+Games}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) display\+More\+Games 
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-}\label{interface_fuse_s_d_k_ac7c361dc8e2935cbd32cbdd6c5c8952b}
-
-
-This method is use to display the \char`\"{}\+More Games\char`\"{} section. 
-
-The \char`\"{}\+More Games\char`\"{} section can be used to showcase your own games or all games within the Fuse network (including yours!). To call the \char`\"{}\+More Games\char`\"{} overlay, simply call\+:
-
-
-\begin{DoxyCode}
-[\hyperlink{interface_fuse_s_d_k}{FuseSDK} \hyperlink{interface_fuse_s_d_k_ac7c361dc8e2935cbd32cbdd6c5c8952b}{displayMoreGames}];
-\end{DoxyCode}
-
-
-add this delegate method\+:
-
-
-\begin{DoxyCode}
-\textcolor{keyword}{@implementation }YourMoreGamesObject
-
--(void) adWillClose
-\{
-   \textcolor{comment}{// more games overlay has closed}
-\}
-
-\textcolor{keyword}{@end}
-\end{DoxyCode}
-
-
-\begin{DoxySeeAlso}{See also}
-\hyperlink{protocol_fuse_delegate-p_aafc293cd46be3bd70eeb60971b961a51}{-\/ ad\+Will\+Close (\+Fuse\+Delegate-\/p)} for more information on the delegate method call 
 \end{DoxySeeAlso}
 \hypertarget{interface_fuse_s_d_k_a279e4cb8e95a3e78197761156a7de50d}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!display\+Notifications@{display\+Notifications}}
 \index{display\+Notifications@{display\+Notifications}!Fuse\+S\+D\+K@{Fuse\+S\+D\+K}}
@@ -948,7 +913,7 @@ Get a List of All active ad zones.
 
 This returns a list of adzones currently setup for displaying ads. It's primary function is developer side debugging in nature, as disabled or empty Adzones should be omitted. 
 \begin{DoxyCode}
-NSArray* adZoneList = [\hyperlink{interface_fuse_s_d_k}{FuseSDK} \hyperlink{interface_fuse_s_d_k_aa268a44dea0b4db37d2d4ffa2c0ed23d}{GetAdZoneList}]
+NSArray* adZoneList = [[\hyperlink{interface_fuse_s_d_k}{FuseSDK} \textcolor{keyword}{get}] \hyperlink{interface_fuse_s_d_k_aa268a44dea0b4db37d2d4ffa2c0ed23d}{GetAdZoneList}]
 \end{DoxyCode}
 
 
@@ -1147,6 +1112,36 @@ It is recommended that a default value be present on the device in case the user
 \begin{DoxySeeAlso}{See also}
 \hyperlink{interface_fuse_s_d_k_adf7ed64a02b9540c9ded4b931ea4e400}{+ start\+Session\+:delegate\+:with\+Options\+:} for information on setting up the $<$\hyperlink{protocol_fuse_delegate-p}{Fuse\+Delegate}$>$ 
 \end{DoxySeeAlso}
+\hypertarget{interface_fuse_s_d_k_a3314236b84929bbc6fb400ac72135691}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!get\+I\+A\+P\+Offer\+Info\+For\+Zone\+I\+D\+:@{get\+I\+A\+P\+Offer\+Info\+For\+Zone\+I\+D\+:}}
+\index{get\+I\+A\+P\+Offer\+Info\+For\+Zone\+I\+D\+:@{get\+I\+A\+P\+Offer\+Info\+For\+Zone\+I\+D\+:}!Fuse\+S\+D\+K@{Fuse\+S\+D\+K}}
+\subsubsection[{get\+I\+A\+P\+Offer\+Info\+For\+Zone\+I\+D\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Fuse\+I\+A\+P\+Offer\+Object}$\ast$) get\+I\+A\+P\+Offer\+Info\+For\+Zone\+I\+D\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{\+\_\+zone\+I\+D}
+\end{DoxyParamCaption}
+}\label{interface_fuse_s_d_k_a3314236b84929bbc6fb400ac72135691}
+
+
+This Method returns the \hyperlink{interface_fuse_i_a_p_offer_object}{Fuse\+I\+A\+P\+Offer\+Object} for a given zone\+I\+D, or nil if there is no I\+A\+P offer available. 
+
+If a zone currently contains a I\+A\+P offer, that information will be passed back.
+
+
+\begin{DoxyCode}
+\hyperlink{interface_fuse_i_a_p_offer_object}{FuseIAPOfferObject} * zoneReward = [\hyperlink{interface_fuse_s_d_k}{FuseSDK} getIAPOfferInfoForZoneID:\textcolor{stringliteral}{@"zoneID"}];
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+zone\+I\+D} & (N\+S\+String$\ast$)the name to the ad zone to get the reward object from. May be nil, will use default ad zone. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \hyperlink{interface_fuse_i_a_p_offer_object}{Fuse\+I\+A\+P\+Offer\+Object} with the offer information 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Fuse S\+D\+K version 2.\+2.\+0 
+\end{DoxySince}
 \hypertarget{interface_fuse_s_d_k_ab49bb189bd1ebaf871f24a7c4e4b5290}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!get\+Original\+Account\+Alias@{get\+Original\+Account\+Alias}}
 \index{get\+Original\+Account\+Alias@{get\+Original\+Account\+Alias}!Fuse\+S\+D\+K@{Fuse\+S\+D\+K}}
 \subsubsection[{get\+Original\+Account\+Alias}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String$\ast$) get\+Original\+Account\+Alias 
@@ -1273,7 +1268,7 @@ Fuse S\+D\+K version 1.\+23
 }\label{interface_fuse_s_d_k_a89958c6b87beffac157ac028e9e29df1}
 
 
-This Method returns the \hyperlink{interface_fuse_rewarded_object}{Fuse\+Rewarded\+Object} for a give zone\+I\+D, or nil if there is no rewards available. 
+This Method returns the \hyperlink{interface_fuse_rewarded_object}{Fuse\+Rewarded\+Object} for a given zone\+I\+D, or nil if there is no rewards available. 
 
 If a zone is configured to show rewarded videos, this will return an object containing those details.
 
@@ -1293,6 +1288,37 @@ a \hyperlink{interface_fuse_rewarded_object}{Fuse\+Rewarded\+Object} with the re
 \end{DoxyReturn}
 \begin{DoxySince}{Since}
 Fuse S\+D\+K version 2.\+0.\+0 
+\end{DoxySince}
+\hypertarget{interface_fuse_s_d_k_a2988bfb2515b70af4aeafd4dea7ada57}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!get\+Virtual\+Goods\+Offer\+Info\+For\+Zone\+I\+D\+:@{get\+Virtual\+Goods\+Offer\+Info\+For\+Zone\+I\+D\+:}}
+\index{get\+Virtual\+Goods\+Offer\+Info\+For\+Zone\+I\+D\+:@{get\+Virtual\+Goods\+Offer\+Info\+For\+Zone\+I\+D\+:}!Fuse\+S\+D\+K@{Fuse\+S\+D\+K}}
+\subsubsection[{get\+Virtual\+Goods\+Offer\+Info\+For\+Zone\+I\+D\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Fuse\+Virtual\+Goods\+Offer\+Object}$\ast$) get\+Virtual\+Goods\+Offer\+Info\+For\+Zone\+I\+D\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{\+\_\+zone\+I\+D}
+\end{DoxyParamCaption}
+}\label{interface_fuse_s_d_k_a2988bfb2515b70af4aeafd4dea7ada57}
+
+
+This Method returns the \hyperlink{interface_fuse_rewarded_object}{Fuse\+Rewarded\+Object} for a give zone\+I\+D, or nil if there is Virtual Good offer available. 
+
+If a zone currently contains a Virtual Goods offer, that information will be passed back.
+
+
+\begin{DoxyCode}
+\hyperlink{interface_fuse_virtual_goods_offer_object}{FuseVirtualGoodsOfferObject} * zoneReward = [\hyperlink{interface_fuse_s_d_k}{FuseSDK} 
+      getVirtualGoodsOfferInfoForZoneID:\textcolor{stringliteral}{@"zoneID"}];
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+zone\+I\+D} & (N\+S\+String$\ast$)the name to the ad zone to get the reward object from. May be nil, will use default ad zone. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \hyperlink{interface_fuse_virtual_goods_offer_object}{Fuse\+Virtual\+Goods\+Offer\+Object} with the offer information 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Fuse S\+D\+K version 2.\+2.\+0 
 \end{DoxySince}
 \hypertarget{interface_fuse_s_d_k_a826545aa45a550cbc10cc98137ee5898}{}\index{Fuse\+S\+D\+K@{Fuse\+S\+D\+K}!google\+Play\+Login\+:\+Access\+Token\+:@{google\+Play\+Login\+:\+Access\+Token\+:}}
 \index{google\+Play\+Login\+:\+Access\+Token\+:@{google\+Play\+Login\+:\+Access\+Token\+:}!Fuse\+S\+D\+K@{Fuse\+S\+D\+K}}
@@ -2434,6 +2460,19 @@ In the implementation of the delegate object, add this delegate method\+:
 {\em \+\_\+options} & (N\+S\+Dictionary$\ast$) Options for showing the ad, like showing the preroll and postroll for rewarded videos. Can be found in \hyperlink{_fuse_s_d_k_definitions_8h_source}{Fuse\+S\+D\+K\+Definitions.\+h}, may be nil\\
 \hline
 \end{DoxyParams}
+Using Options for Show\+Ad 
+\begin{DoxyCode}
+- (void)functionForShowingFuseAd
+\{
+   [\hyperlink{interface_fuse_s_d_k}{FuseSDK} showAdForZoneID:\textcolor{stringliteral}{@"zoneID"} options: 
+       @\{ kFuseRewardedAdOptionKey\_ShowPreRoll: @YES
+       ,kFuseRewardedAdOptionKey\_ShowPostRoll: @NO
+       ,kFuseRewardedOptionKey\_PreRollYesButtonText: \textcolor{stringliteral}{@"I want it!"} \}
+   ];
+\}
+\end{DoxyCode}
+
+
 \begin{DoxySeeAlso}{See also}
 \hyperlink{interface_fuse_s_d_k_adf7ed64a02b9540c9ded4b931ea4e400}{+ start\+Session\+:delegate\+:with\+Options\+:} to see how to register a $<$\hyperlink{protocol_fuse_delegate-p}{Fuse\+Delegate}$>$ object to receive the optional callback 
 \end{DoxySeeAlso}
@@ -2463,6 +2502,19 @@ An example call would be\+:
 \{
 
    [\hyperlink{interface_fuse_s_d_k}{FuseSDK} startSession: \textcolor{stringliteral}{@"YOUR APP ID"} Delegate:\textcolor{keyword}{self} withOptions:nil];
+
+...
+\}
+\end{DoxyCode}
+
+
+Using Fuse S\+D\+K Options 
+\begin{DoxyCode}
+- (void)applicationDidFinishLaunching:(UIApplication *)application
+\{
+
+[\hyperlink{interface_fuse_s_d_k}{FuseSDK} startSession: \textcolor{stringliteral}{@"YOUR APP ID"} Delegate:\textcolor{keyword}{self} withOptions:@\{kFuseSDKOptionRegisterForPush:@YES
+      ,kFuseSDKOptionKey\_HandleAdURLs:@NO\} ];
 
 ...
 \}
