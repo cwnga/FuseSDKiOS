@@ -2,8 +2,8 @@
 
 ## Current Version
 
-Version: 2.3.0
-Released: September 23rd, 2015
+Version: 2.3.1
+Released: October 9th, 2015
 
 ## Important Notes About iOS 9:
 ### App Transport Security
@@ -35,6 +35,11 @@ Please review the [integration instructions](https://wiki.fusepowered.com/index.
 Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an account to get started!
 
 ## Release Notes
+
+### 2.3.0
+October 9th, 2015
+* fix Issues with iOS 9 only frameworks being linked.
+* 
 
 ### 2.3.0
 September 23rd, 2015
