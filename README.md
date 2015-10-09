@@ -36,10 +36,10 @@ Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an acc
 
 ## Release Notes
 
-### 2.3.0
+### 2.3.1
 October 9th, 2015
 * fix Issues with iOS 9 only frameworks being linked.
-* 
+* fix for some video ads in iOS 9
 
 ### 2.3.0
 September 23rd, 2015
