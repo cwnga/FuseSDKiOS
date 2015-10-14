@@ -2,9 +2,22 @@
 
 ## Current Version
 
-Version: 2.2.0 Core
+Version: 2.3.2 Core
 
-Released: August 10th, 2015
+Released: October 14th, 2015
+
+## Important Notes About iOS 9:
+### App Transport Security
+This feature is designed to improve the security of connections between apps and web services.
+Fuse bundles several third-party ad network SDKs as part of AdRally, and some ad providers may not be compliant by the time iOS 9 is released. If you are building an app with Xcode 7 that will run on iOS 9 devices, you may need to implement a short-term fix to allow insecure connections.  Please see https://wiki.fusepowered.com/index.php?title=Support_for_iOS_9 for details on how to disable App Transport Security.
+
+### Bitcode Support
+Bitcode is an intermediate representation of a compiled program ( https://developer.apple.com/library/prerelease/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html#//apple_ref/doc/uid/TP40012582-CH35-SW2 ).
+
+Uploading apps containing bitcode to Apple through iTunes Connect allows Apple to re-optimize the application binary in the future without needing a re-submission.  However, enabling bitcode (which is the default setting in Xcode 7), requires all linked frameworks and binaries to have been built with bitcode enabled.  While the FuseSDK itself has been built with bitcode enabled, some of the included ad network libraries have not yet enabled bitcode.  This will be fixed over time, but in the meanwhile, you can manually disable bitcode in their application by going to the Build Options in their target's build settings.  Further details can be found at: https://wiki.fusepowered.com/index.php?title=Support_for_iOS_9
+
+### Xcode 7
+This version of the Fuse SDK is built using the iOS 9 SDK under Xcode 7. Using this SDK with previous version of Xcode currently does not function. If you are using FuseSDK 2.3 or higher please build against iOS9 and Xcode 7 or greater.
 
 ## To Download
 The Fuse "Core" SDK version is a light-weight alternative to the standard Fuse SDK, and includes a pre-bundled version of AdRally optimized for serving video ads (both rewarded and non-rewarded). This SDK is useful for developers who want to keep the final binary size of their apps as small as possible.
@@ -24,6 +37,28 @@ Please review the [integration instructions](https://wiki.fusepowered.com/index.
 Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an account to get started!
 
 ## Release Notes
+
+### 2.3.2
+October 14th, 2015
+* fix for crash on iOS 7 64-bit devices
+
+### 2.3.1
+October 9th, 2015
+* fix Issues with iOS 9 only frameworks being linked.
+* fix for some video ads in iOS 9
+
+### 2.3.0
+September 23rd, 2015
+* iOS 9 Support
+* Added meta-data for IAP and Virtual Good Offers
+* Support for custom call-to-action text (campaign videos)
+* Ad Provider Updates
+* Bug Fixes
+
+### 2.2.2
+September 3rd, 2015
+* Ad provider updates
+* Added adDidShow callback
 
 ### 2.2.0
 August 10th, 2015
