@@ -2,9 +2,8 @@
 
 ## Current Version
 
-Version: 2.3.2 Core
-
-Released: October 14th, 2015
+Version: 2.4.0 Core
+Released: November 12th, 2015
 
 ## Important Notes About iOS 9:
 ### App Transport Security
@@ -20,7 +19,7 @@ Uploading apps containing bitcode to Apple through iTunes Connect allows Apple t
 This version of the Fuse SDK is built using the iOS 9 SDK under Xcode 7. Using this SDK with previous version of Xcode currently does not function. If you are using FuseSDK 2.3 or higher please build against iOS9 and Xcode 7 or greater.
 
 ## To Download
-The Fuse "Core" SDK version is a light-weight alternative to the standard Fuse SDK, and includes a pre-bundled version of AdRally optimized for serving video ads (both rewarded and non-rewarded). This SDK is useful for developers who want to keep the final binary size of their apps as small as possible.
+The Fuse "Core" SDK version is a light-weight alternative to the standard Fuse SDK, and includes a pre-bundled version of AdRally optimized for serving video ads (both rewarded and non-rewarded). This SDK is useful for developers who want to keep the final binary size of their apps as small as possible. 
 The easiest way to obtain the Fuse SDK is to click the "Download ZIP" button located in the right-hand navigation pane of the Github repository page.
 
 ## Getting Started
@@ -37,6 +36,13 @@ Please review the [integration instructions](https://wiki.fusepowered.com/index.
 Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an account to get started!
 
 ## Release Notes
+
+### 2.4.0
+November 12, 2015
+* Ad Provider updates
+* VAST Improvements
+* Custom End Cards
+* Bug Fixes
 
 ### 2.3.2
 October 14th, 2015
@@ -64,13 +70,12 @@ September 3rd, 2015
 August 10th, 2015
 * New ad providers added
 * Added VAST support
-* Added rewarded video authentication
+* Added rewarded video authentication 
   * Added method +(void) setRewardedVideoUserID:(NSString *) _userID; to identify the user
   * Added itemID in the FuseRewardedObject in the rewardedAdCompleteWithObject callback
 * Added startTime and endTime to FuseIAPOfferObject object in the IAPOfferAcceptedWithObject callback
 * Added currencyID, virtualGoodID, startTime and endTime to FuseVirtualGoodsOfferObject object in virtualGoodsOfferAcceptedWithObject callback
 * Bug fixes
-
 
 ### 2.1.4
 June 16th, 2015
