@@ -1,4 +1,4 @@
-# Fuse iOS SDK Core
+# Upsight Ad Mediation SDK
 
 ## Current Version
 
@@ -16,11 +16,11 @@ Bitcode is an intermediate representation of a compiled program ( https://develo
 Uploading apps containing bitcode to Apple through iTunes Connect allows Apple to re-optimize the application binary in the future without needing a re-submission.  However, enabling bitcode (which is the default setting in Xcode 7), requires all linked frameworks and binaries to have been built with bitcode enabled.  While the FuseSDK itself has been built with bitcode enabled, some of the included ad network libraries have not yet enabled bitcode.  This will be fixed over time, but in the meanwhile, you can manually disable bitcode in their application by going to the Build Options in their target's build settings.  Further details can be found at: https://wiki.fusepowered.com/index.php?title=Support_for_iOS_9
 
 ### Xcode 7
-This version of the Fuse SDK is built using the iOS 9 SDK under Xcode 7. Using this SDK with previous version of Xcode currently does not function. If you are using FuseSDK 2.3 or higher please build against iOS9 and Xcode 7 or greater.
+This version of the Upsight Ad Mediation SDK is built using the iOS 9 SDK under Xcode 7. Using this SDK with previous version of Xcode currently does not function. If you are using FuseSDK 2.3 or higher please build against iOS9 and Xcode 7 or greater.
 
 ## To Download
-The Fuse "Core" SDK version is a light-weight alternative to the standard Fuse SDK, and includes a pre-bundled version of AdRally optimized for serving video ads (both rewarded and non-rewarded). This SDK is useful for developers who want to keep the final binary size of their apps as small as possible. 
-The easiest way to obtain the Fuse SDK is to click the "Download ZIP" button located in the right-hand navigation pane of the Github repository page.
+The Upsight Ad Mediation SDK is an additional SDK that is used in conjunction with the Upsight SDK to enable rewarded and non-rewarded video ads.
+The easiest way to obtain the Upsight Ad Mediation SDK is to click the "Download ZIP" button located in the right-hand navigation pane of the Github repository page.
 
 ## Getting Started
 
@@ -147,7 +147,7 @@ November 10th, 2014
 * Bug fixes
 
 ## Legal Requirements
-By downloading the Fuse Powered SDK, you are granted a limited, non-commercial license to use and review the SDK solely for evaluation purposes.  If you wish to integrate the SDK into any commercial applications, you must register an account with [Fuse Powered](https://www.fusepowered.com) and accept the terms and conditions on the Fuse Powered website.
+By downloading the Upsight Ad Mediation SDK, you are granted a limited, non-commercial license to use and review the SDK solely for evaluation purposes.  If you wish to integrate the SDK into any commercial applications, you must register an account with [Upsight](https://www.upsight.com) and accept the terms and conditions.
 
 ## Contact Us
-For more information, please visit [http://www.fusepowered.com](http://www.fusepowered.com). For questions or assistance, please email us at [support@fusepowered.com](mailto:support@fusepowered.com).
+For more information, please visit [http://www.upsight.com](http://www.upsight.com). For questions or assistance, please email us at [support@upsight.com](mailto:support@upsight.com).
