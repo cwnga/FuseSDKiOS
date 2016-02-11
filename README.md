@@ -8,7 +8,7 @@ Released: November 12th, 2015
 ## Important Notes About iOS 9:
 ### App Transport Security
 This feature is designed to improve the security of connections between apps and web services.
-Fuse bundles several third-party ad network SDKs as part of AdRally, and some ad providers may not be compliant by the time iOS 9 is released. If you are building an app with Xcode 7 that will run on iOS 9 devices, you may need to implement a short-term fix to allow insecure connections.  Please see https://wiki.fusepowered.com/index.php?title=Support_for_iOS_9 for details on how to disable App Transport Security.
+Upsight bundles several third-party ad network SDKs as part of Upsight Ad Mediation SDK, and some ad providers may not be compliant by the time iOS 9 is released. If you are building an app with Xcode 7 that will run on iOS 9 devices, you may need to implement a short-term fix to allow insecure connections.  Please see https://wiki.fusepowered.com/index.php?title=Support_for_iOS_9 for details on how to disable App Transport Security.
 
 ### Bitcode Support
 Bitcode is an intermediate representation of a compiled program ( https://developer.apple.com/library/prerelease/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html#//apple_ref/doc/uid/TP40012582-CH35-SW2 ).
