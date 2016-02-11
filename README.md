@@ -8,12 +8,12 @@ Released: November 12th, 2015
 ## Important Notes About iOS 9:
 ### App Transport Security
 This feature is designed to improve the security of connections between apps and web services.
-Upsight bundles several third-party ad network SDKs as part of Upsight Ad Mediation SDK, and some ad providers may not be compliant by the time iOS 9 is released. If you are building an app with Xcode 7 that will run on iOS 9 devices, you may need to implement a short-term fix to allow insecure connections.  Please see https://wiki.fusepowered.com/index.php?title=Support_for_iOS_9 for details on how to disable App Transport Security.
+Upsight bundles several third-party ad network SDKs as part of Upsight Ad Mediation SDK, and some ad providers may not be compliant by the time iOS 9 is released. If you are building an app with Xcode 7 that will run on iOS 9 devices, you may need to implement a short-term fix to allow insecure connections.  Please see http://help.upsight.com/api_sdk_reference/ios/upsight-ad-mediation/.
 
 ### Bitcode Support
 Bitcode is an intermediate representation of a compiled program ( https://developer.apple.com/library/prerelease/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html#//apple_ref/doc/uid/TP40012582-CH35-SW2 ).
 
-Uploading apps containing bitcode to Apple through iTunes Connect allows Apple to re-optimize the application binary in the future without needing a re-submission.  However, enabling bitcode (which is the default setting in Xcode 7), requires all linked frameworks and binaries to have been built with bitcode enabled.  While the FuseSDK itself has been built with bitcode enabled, some of the included ad network libraries have not yet enabled bitcode.  This will be fixed over time, but in the meanwhile, you can manually disable bitcode in their application by going to the Build Options in their target's build settings.  Further details can be found at: https://wiki.fusepowered.com/index.php?title=Support_for_iOS_9
+Uploading apps containing bitcode to Apple through iTunes Connect allows Apple to re-optimize the application binary in the future without needing a re-submission.  However, enabling bitcode (which is the default setting in Xcode 7), requires all linked frameworks and binaries to have been built with bitcode enabled.  While the FuseSDK itself has been built with bitcode enabled, some of the included ad network libraries have not yet enabled bitcode.  This will be fixed over time, but in the meanwhile, you can manually disable bitcode in their application by going to the Build Options in their target's build settings.  Further details can be found at: http://help.upsight.com/api_sdk_reference/ios/upsight-ad-mediation/
 
 ### Xcode 7
 This version of the Upsight Ad Mediation SDK is built using the iOS 9 SDK under Xcode 7. Using this SDK with previous version of Xcode currently does not function. If you are using FuseSDK 2.3 or higher please build against iOS9 and Xcode 7 or greater.
@@ -24,16 +24,14 @@ The easiest way to obtain the Upsight Ad Mediation SDK is to click the "Download
 
 ## Getting Started
 
-Please review the [integration instructions](https://wiki.fusepowered.com/index.php?title=IOS) found here for more information on integrating the Fuse SDK.
+Please review the [integration instructions](http://help.upsight.com/api_sdk_reference/ios/upsight-ad-mediation/) found here for more information on integrating the Fuse SDK.
 
 ## References
 
-* [Integration Instructions](http://wiki.fusepowered.com/index.php/IOS)
-* [Inline Code Reference](http://fusepowered.github.io/FuseSDKiOS/)
-* [Fuse SDK Class Reference](http://fusepowered.github.io/FuseSDKiOS/Docs/html/interface_fuse_s_d_k.html)
+* [Integration Instructions](http://help.upsight.com/api_sdk_reference/ios/upsight-ad-mediation/)
 
 ## Need an Account?
-Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an account to get started!
+Please visit [http://www.upsight.com](http://www.upsight.com) and contact us to get started!
 
 ## Release Notes
 
