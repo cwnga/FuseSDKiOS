@@ -13,10 +13,10 @@ Upsight bundles several third-party ad network SDKs as part of Upsight Ad Mediat
 ### Bitcode Support
 Bitcode is an intermediate representation of a compiled program ( https://developer.apple.com/library/prerelease/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html#//apple_ref/doc/uid/TP40012582-CH35-SW2 ).
 
-Uploading apps containing bitcode to Apple through iTunes Connect allows Apple to re-optimize the application binary in the future without needing a re-submission.  However, enabling bitcode (which is the default setting in Xcode 7), requires all linked frameworks and binaries to have been built with bitcode enabled.  While the FuseSDK itself has been built with bitcode enabled, some of the included ad network libraries have not yet enabled bitcode.  This will be fixed over time, but in the meanwhile, you can manually disable bitcode in their application by going to the Build Options in their target's build settings.  Further details can be found at: http://help.upsight.com/api_sdk_reference/ios/upsight-ad-mediation/
+Uploading apps containing bitcode to Apple through iTunes Connect allows Apple to re-optimize the application binary in the future without needing a re-submission.  However, enabling bitcode (which is the default setting in Xcode 7), requires all linked frameworks and binaries to have been built with bitcode enabled.  While the Upsight Ad Mediation itself has been built with bitcode enabled, some of the included ad network libraries have not yet enabled bitcode.  This will be fixed over time, but in the meanwhile, you can manually disable bitcode in their application by going to the Build Options in their target's build settings.  Further details can be found at: http://help.upsight.com/api_sdk_reference/ios/upsight-ad-mediation/
 
 ### Xcode 7
-This version of the Upsight Ad Mediation SDK is built using the iOS 9 SDK under Xcode 7. Using this SDK with previous version of Xcode currently does not function. If you are using FuseSDK 2.3 or higher please build against iOS9 and Xcode 7 or greater.
+This version of the Upsight Ad Mediation SDK is built using the iOS 9 SDK under Xcode 7. Using this SDK with previous version of Xcode currently does not function.
 
 ## To Download
 The Upsight Ad Mediation SDK is an additional SDK that is used in conjunction with the Upsight SDK to enable rewarded and non-rewarded video ads.
@@ -24,7 +24,7 @@ The easiest way to obtain the Upsight Ad Mediation SDK is to click the "Download
 
 ## Getting Started
 
-Please review the [integration instructions](http://help.upsight.com/api_sdk_reference/ios/upsight-ad-mediation/) found here for more information on integrating the Fuse SDK.
+Please review the [integration instructions](http://help.upsight.com/api_sdk_reference/ios/upsight-ad-mediation/) found here for more information on integrating the Upsight Ad Mediation SDK.
 
 ## References
 
