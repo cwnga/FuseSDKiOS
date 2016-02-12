@@ -25,8 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    Upsight is the most comprehensive analytics and marketing platform for Web and mobile apps. We are building a business engine to help our customers better understand user behavior, decide what it means, and act to impact key goals.
-
+                    Upsight is the most comprehensive analytics, marketing, and ads mediation platform for Web and mobile apps. We are building a business engine to help our customers better understand user behavior, decide what it means, and act to impact key goals.
+                    
+                    The Upsight Ad Mediation SDK can be used only in conjunction with the Upsight SDK, please make sure you have already integrated version 4.1.0 or greater of the Upsight SDK before installing.
+                    
                     For more information visit www.upsight.com.  For in depth documentation and usage instructions of the Upsight product visit help.upsight.com
                    DESC
 
