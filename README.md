@@ -2,8 +2,8 @@
 
 ## Current Version
 
-Version: 2.4.1
-Released: November 17th, 2015
+Version: 2.5.0
+February 25th, 2016
 
 ## Important Notes About iOS 9:
 ### App Transport Security
@@ -35,6 +35,12 @@ Please review the [integration instructions](https://wiki.fusepowered.com/index.
 Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an account to get started!
 
 ## Release Notes
+
+### 2.5.0
+February 25th, 2016
+* Rich media pre and post rolls for cross promotional videos
+* Price localization for offers
+* Ad provider updates
 
 ### 2.4.1
 November 17, 2015
