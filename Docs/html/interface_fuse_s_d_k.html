@@ -190,8 +190,8 @@ Class Methods</h2></td></tr>
 <tr class="memitem:abd1bc1b2e677978fb0e559cd9f7a72a9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_fuse_s_d_k.html#abd1bc1b2e677978fb0e559cd9f7a72a9">registerVirtualGoodsPurchase:Amount:CurrencyID:</a></td></tr>
 <tr class="memdesc:abd1bc1b2e677978fb0e559cd9f7a72a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method records purchases of virtual goods.  <a href="#abd1bc1b2e677978fb0e559cd9f7a72a9">More...</a><br /></td></tr>
 <tr class="separator:abd1bc1b2e677978fb0e559cd9f7a72a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61579033e1c61be4ee4567c4ed159dd0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61579033e1c61be4ee4567c4ed159dd0"></a>
-(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>setRewardedVideoUserID:</b></td></tr>
+<tr class="memitem:a61579033e1c61be4ee4567c4ed159dd0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_fuse_s_d_k.html#a61579033e1c61be4ee4567c4ed159dd0">setRewardedVideoUserID:</a></td></tr>
+<tr class="memdesc:a61579033e1c61be4ee4567c4ed159dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets the user ID string for rewarded video server verification.  <a href="#a61579033e1c61be4ee4567c4ed159dd0">More...</a><br /></td></tr>
 <tr class="separator:a61579033e1c61be4ee4567c4ed159dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdf624c4ef56ee1c7cac73b37dc4f5fd"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_fuse_s_d_k.html#abdf624c4ef56ee1c7cac73b37dc4f5fd">isAdAvailableForZoneID:</a></td></tr>
 <tr class="memdesc:abdf624c4ef56ee1c7cac73b37dc4f5fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns if an ad was loaded in a particular zone.  <a href="#abdf624c4ef56ee1c7cac73b37dc4f5fd">More...</a><br /></td></tr>
@@ -2661,6 +2661,32 @@ openFeintLogin: for more information on how to register a login with an OpenFein
 
 </div>
 </div>
+<a class="anchor" id="a61579033e1c61be4ee4567c4ed159dd0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setRewardedVideoUserID: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>_userID</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method sets the user ID string for rewarded video server verification. </p>
+<p>To allow server side verificiation. A user id registered with this function is passed to the server when a rewarded video has been completed. The server then transmits this id to the 3rd Party server registered on the FusePowered Dashboard. The value is only cached for the duration of the session, and can be changed at any time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_userID</td><td>[NSString *] String username to use for Rewarded verification, May be NULL <div class="fragment"><div class="line">[<a class="code" href="interface_fuse_s_d_k.html">FuseSDK</a> setRewardedVideoUserID:<span class="stringliteral">@&quot;bobSmith1994&quot;</span>];</div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="aba0c488866771c47887ac847c2cd884e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3085,7 +3111,7 @@ openFeintLogin: for more information on how to register a login with an OpenFein
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_fuse_s_d_k.html">FuseSDK</a></li>
-    <li class="footer">Generated on Wed Sep 23 2015 09:32:24 for FuseSDK (iOS) by
+    <li class="footer">Generated on Thu Feb 25 2016 16:47:26 for FuseSDK (iOS) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>
