@@ -1,0 +1,27 @@
+var protocol_fuse_delegate_p =
+[
+    [ "account:loginError:", "protocol_fuse_delegate-p.html#a1c8b10d8ec200c9d2aed94c494109a86", null ],
+    [ "accountLoginComplete:Account:", "protocol_fuse_delegate-p.html#a54a18530604a7ceeb0e9419fc7fa3345", null ],
+    [ "adAvailabilityResponse:Error:", "protocol_fuse_delegate-p.html#ad9af5fda0a2199ba2a9a2bafab2f4a82", null ],
+    [ "adDidShow:mediaType:", "protocol_fuse_delegate-p.html#a88bd02eb971260468ac6f6052bdda28f", null ],
+    [ "adFailedToDisplay", "protocol_fuse_delegate-p.html#a1513d7db889fcaa54d7248f441b74072", null ],
+    [ "adWillClose", "protocol_fuse_delegate-p.html#aafc293cd46be3bd70eeb60971b961a51", null ],
+    [ "friendAccepted:Error:", "protocol_fuse_delegate-p.html#ab48f8ef85f4f32654af102c5fa09c4c1", null ],
+    [ "friendAdded:Error:", "protocol_fuse_delegate-p.html#a5c1b86ecfdc9518f976d5ea96156b408", null ],
+    [ "friendRejected:Error:", "protocol_fuse_delegate-p.html#a2bc3be54c0a0a4f3cee3e9e96501c5ce", null ],
+    [ "friendRemoved:Error:", "protocol_fuse_delegate-p.html#a94ed7e39378bb2ae24ecc9c941dd0218", null ],
+    [ "friendsListError:", "protocol_fuse_delegate-p.html#a071433b93b221cbab7c0f112903e4718", null ],
+    [ "friendsListUpdated:", "protocol_fuse_delegate-p.html#a4b29ca96b491f3ac8548a85983aa0cff", null ],
+    [ "friendsMigrated:Error:", "protocol_fuse_delegate-p.html#adb2a01d8912d54c4a05a675e10901f6e", null ],
+    [ "gameConfigurationReceived", "protocol_fuse_delegate-p.html#a1da152418e0a5dc2c1b108f501c6e627", null ],
+    [ "handleAdClickWithURL:", "protocol_fuse_delegate-p.html#a2d725902d1f6c4c19d3ce3b65d60052b", null ],
+    [ "IAPOfferAcceptedWithObject:", "protocol_fuse_delegate-p.html#ad46a55d7852f92e7615ce5168141bc7a", null ],
+    [ "notficationWillClose", "protocol_fuse_delegate-p.html#ac493f7599268adadcc22e7c508b4ba61", null ],
+    [ "notificationAction:", "protocol_fuse_delegate-p.html#afc6afbdf6a149756eb2dca5e0fd64b77", null ],
+    [ "purchaseVerification:TransactionID:OriginalTransactionID:", "protocol_fuse_delegate-p.html#a74e3e8647db995888bdf94c64d5ad26b", null ],
+    [ "rewardedAdCompleteWithObject:", "protocol_fuse_delegate-p.html#a3e81f123e745af07c58156c154c13cdc", null ],
+    [ "sessionLoginError:", "protocol_fuse_delegate-p.html#a24b19ff8cc73955c5cc3b84428b302b0", null ],
+    [ "sessionStartReceived", "protocol_fuse_delegate-p.html#a4278f68e73dc20a7a24b331959a1872c", null ],
+    [ "timeUpdated:", "protocol_fuse_delegate-p.html#a85c5468cf940315584698956edcbbdfd", null ],
+    [ "virtualGoodsOfferAcceptedWithObject:", "protocol_fuse_delegate-p.html#a9577824db67c469466bd720d0193273d", null ]
+];
