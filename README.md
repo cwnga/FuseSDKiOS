@@ -2,8 +2,8 @@
 
 ## Current Version
 
-Version: 2.4.5
-Released: February 12th, 2016
+Version: 2.5.1
+Released: February 29th, 2016
 
 ## Important Notes About iOS 9:
 ### App Transport Security
@@ -34,6 +34,10 @@ Please review the [integration instructions](http://help.upsight.com/api_sdk_ref
 Please visit [http://www.upsight.com](http://www.upsight.com) and contact us to get started!
 
 ## Release Notes
+
+### 2.5.1
+February 29, 2016
+* Update all internal advertising partners
 
 ### 2.4.5
 February 12, 2016
