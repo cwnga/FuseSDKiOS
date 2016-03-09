@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "UpsightAdMediation"
-  s.version      = "2.4.5"
+  s.version      = "2.5.1"
   s.summary      = "Upsight Ad Mediation SDK for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -71,7 +71,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/fusepowered/FuseSDKiOS.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/fusepowered/FuseSDKiOS.git",
+                     :tag => "USMv#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -83,7 +84,8 @@ Pod::Spec.new do |s|
   #
 
   s.ios.source_files  = "Code/*.h"
-  s.ios.vendored_library = "Code/libUpsightAdMediation.a"
+  s.ios.vendored_library = "Code/libUpsightMediation.a"
+  s.ios.vendored_library = "Code/libUpsightMediationAds.a"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
