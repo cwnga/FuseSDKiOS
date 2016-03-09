@@ -2,8 +2,12 @@
 
 ## Current Version
 
-Version: 2.4.0 Core
-Released: November 12th, 2015
+Version: 2.5.2 Core
+Released: March 9th, 2016
+
+## Important:
+Due to GitHub binary size limitations, the latest versions of the Core SDK can be found at: https://github.com/fusepowered/FuseSDKiOS/releases
+The 2.4 version of the Core SDK will be left in this branch for version history.
 
 ## Important Notes About iOS 9:
 ### App Transport Security
@@ -36,6 +40,14 @@ Please review the [integration instructions](https://wiki.fusepowered.com/index.
 Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an account to get started!
 
 ## Release Notes
+
+### 2.5.2
+Match 9th, 2016
+* Fix for potential crash on iOS 7 with rewarded ads
+* Hotfix for IAP validation
+* Rich media pre and post rolls for cross promotional videos
+* Price localization for offers
+* Ad provider updates
 
 ### 2.4.0
 November 12, 2015
