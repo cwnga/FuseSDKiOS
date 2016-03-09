@@ -2,11 +2,11 @@
 
 ## Current Version
 
-Version: 2.5.2 Core
+Version: 2.5.2 Core<BR>
 Released: March 9th, 2016
 
 ## Important:
-Due to GitHub binary size limitations, the latest versions of the Core SDK can be found at: https://github.com/fusepowered/FuseSDKiOS/releases
+Due to GitHub binary size limitations, the latest versions of the Core SDK can be found at:<BR> https://github.com/fusepowered/FuseSDKiOS/releases<BR>
 The 2.4 version of the Core SDK will be left in this branch for version history.
 
 ## Important Notes About iOS 9:
