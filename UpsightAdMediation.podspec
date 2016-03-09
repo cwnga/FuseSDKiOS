@@ -84,8 +84,7 @@ Pod::Spec.new do |s|
   #
 
   s.ios.source_files  = "Code/*.h"
-  s.ios.vendored_library = "Code/libUpsightMediation.a"
-  s.ios.vendored_library = "Code/libUpsightMediationAds.a"
+  s.ios.vendored_library = "Code/libUpsightMediation.a", "Code/libUpsightMediationAds.a"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
