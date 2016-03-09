@@ -2,8 +2,8 @@
 
 ## Current Version
 
-Version: 2.5.1
-February 29th, 2016
+Version: 2.5.2
+March 9th, 2016
 
 ## Important Notes About iOS 9:
 ### App Transport Security
@@ -35,6 +35,10 @@ Please review the [integration instructions](https://wiki.fusepowered.com/index.
 Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an account to get started!
 
 ## Release Notes
+
+### 2.5.2
+March 9th, 2016
+* Fix for potential crash on iOS 7 with rewarded ads
 
 ### 2.5.1
 February 2th, 2016
