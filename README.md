@@ -2,8 +2,8 @@
 
 ## Current Version
 
-Version: 2.5.3
-March 22nd, 2016
+Version: 2.5.4
+March 29nd, 2016
 
 ## Important Notes About iOS 9:
 ### App Transport Security
@@ -35,6 +35,10 @@ Please review the [integration instructions](https://wiki.fusepowered.com/index.
 Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an account to get started!
 
 ## Release Notes
+
+### 2.5.4
+March 29nd, 2016
+* Recompile to Fix Archiving issues with Certain versions of unity
 
 ### 2.5.3
 March 22nd, 2016
