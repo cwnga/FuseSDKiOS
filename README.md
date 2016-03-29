@@ -2,8 +2,8 @@
 
 ## Current Version
 
-Version: 2.5.3
-March 22nd, 2016
+Version: 2.5.4
+March 29nd, 2016
 
 ## Important Notes About iOS 9:
 ### App Transport Security
