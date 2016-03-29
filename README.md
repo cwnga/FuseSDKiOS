@@ -36,6 +36,10 @@ Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an acc
 
 ## Release Notes
 
+### 2.5.4
+March 29nd, 2016
+* Recompile to Fix Archiving issues with Certain versions of unity
+
 ### 2.5.3
 March 22nd, 2016
 * Fix for debug logging enabled by default
