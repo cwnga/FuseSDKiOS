@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "UpsightAdMediation"
-  s.version      = "2.5.2"
+  s.version      = "2.5.4"
   s.summary      = "Upsight Ad Mediation SDK for iOS."
 
   # This description is used to generate tags and improve search results.

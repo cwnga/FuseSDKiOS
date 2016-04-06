@@ -2,8 +2,8 @@
 
 ## Current Version
 
-Version: 2.5.1
-Released: February 29th, 2016
+Version: 2.5.4
+Released: April 6th, 2016
 
 ## Important Notes About iOS 9:
 ### App Transport Security
@@ -34,6 +34,12 @@ Please review the [integration instructions](http://help.upsight.com/api_sdk_ref
 Please visit [http://www.upsight.com](http://www.upsight.com) and contact us to get started!
 
 ## Release Notes
+
+### 2.5.4
+April 6, 2016
+* Fix for potential crash on iOS7 with rewarded ads
+* Fix for debug logging enabled by default
+* Recompile to fix archiving with certain versions of Unity
 
 ### 2.5.1
 February 29, 2016

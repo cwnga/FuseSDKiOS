@@ -962,7 +962,7 @@
  @endcode
 
  @param _zoneID (NSString*) The name of the ad zone to display.  You can configure different zones via the Fuse Dashboard. May be nil, will use default ad zone
- @param _options (NSDictionary*) Options for showing the ad, like showing the preroll and postroll for rewarded videos. Can be found in FuseSDKDefinitions.h, may be nil
+ @param _options (NSDictionary*) Options for showing the ad, like showing the preroll and postroll for rewarded videos. Can be found in UpsightAdMediationDefinitions.h, may be nil
  
  
  Using Options for ShowAd
