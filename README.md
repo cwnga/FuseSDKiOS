@@ -2,8 +2,8 @@
 
 ## Current Version
 
-Version: 2.5.2 Core<BR>
-Released: March 9th, 2016
+Version: 2.6.1 Core<BR>
+Released: July 7th, 2016
 
 ## Important:
 Due to GitHub binary size limitations, the latest versions of the Core SDK can be found at:<BR> https://github.com/fusepowered/FuseSDKiOS/releases<BR>
@@ -40,6 +40,12 @@ Please review the [integration instructions](https://wiki.fusepowered.com/index.
 Please visit [http://www.fusepowered.com](http://www.fusepowered.com) for an account to get started!
 
 ## Release Notes
+
+### 2.6.1
+July 7th, 2016
+* Ad network updates
+* Bug and stability fixes
+* Zone queuing
 
 ### 2.5.2
 Match 9th, 2016
